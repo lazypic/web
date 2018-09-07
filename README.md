@@ -8,3 +8,4 @@
 #### reference
 - bootstrap : https://getbootstrap.com/docs/4.1/components/alerts/
 - fontawesome : https://fontawesome.com/icons?d=gallery
+- rawgit gist raw URL -> publish URL: https://rawgit.com
