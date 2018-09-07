@@ -40,11 +40,24 @@ Snap.load(
 function (f) {
 	var g = f.select("g");
 	var t = new Snap.Matrix()
-	t.translate(150,0)
+	t.translate(100,0)
 	g.transform(t);
 	canvas.append(g);
 	g.drag();
 });
+
+// mamma
+Snap.load(
+"https://cdn.rawgit.com/khw7096/2feec8d7495091995750edb5bb69428d/raw/b251e18add0d331f3513973df651029aaa390a38/mamma.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(200,0)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
 
 // cat
 Snap.load(
