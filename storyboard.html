@@ -21,6 +21,11 @@ var canvas = Snap();
 canvas.attr({
 	viewBox: [0,0,width,height]
 });
+// copyright
+var text = canvas.text(width/2 - 100, height-10, "© 2018. lazypic. all rights reserved");
+text.attr({
+	'font-size':16,
+});
 
 // chocoala
 Snap.load(
