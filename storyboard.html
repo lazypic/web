@@ -34,6 +34,18 @@ function (f) {
 	g.drag();
 });
 
+// greedy
+Snap.load(
+"https://cdn.rawgit.com/khw7096/be22b36e374219b04b923a3e823cd145/raw/397f110a862d3cd27becfe117089adccdd3178f6/greedy.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(150,0)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
 // cat
 Snap.load(
 "https://cdn.rawgit.com/khw7096/91ad4974991b541a0a958a162d689636/raw/aca5768b28b330a4f636908157c515b1419b83e7/cat.svg",
