@@ -21,7 +21,9 @@ Snap.load(
 "https://cdn.rawgit.com/khw7096/d46cde3aa1070248f43aaf914153be6c/raw/17c0616e8fe059cd2efc4cc983620783e4994959/chocoala.svg",
 function (f) {
 	var g = f.select("g");
-	g.transform("T0,0");
+	var t = new Snap.Matrix()
+	t.translate(0,0)
+	g.transform(t);
 	canvas.append(g);
 	g.drag();
 });
@@ -31,7 +33,9 @@ Snap.load(
 "https://cdn.rawgit.com/khw7096/91ad4974991b541a0a958a162d689636/raw/aca5768b28b330a4f636908157c515b1419b83e7/cat.svg",
 function (f) {
 	var g = f.select("g");
-	g.transform("T150,0");
+	var t = new Snap.Matrix()
+	t.translate(0,screen.height-150) //bottom line
+	g.transform(t);
 	canvas.append(g);
 	g.drag();
 });
