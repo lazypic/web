@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>storyboard</title>
+<style>
+body {
+	background: #fff;
+}
+</style>
+<script src="http://snapsvg.io/assets/js/snap.svg-min.js?v=1"></script>
+</head>
+<body>
+<script>
+var canvas = Snap();
+canvas.attr({
+	viewBox: [0,0,screen.width,screen.height]
+});
+
+// chocoala
+Snap.load(
+"https://cdn.rawgit.com/khw7096/d46cde3aa1070248f43aaf914153be6c/raw/17c0616e8fe059cd2efc4cc983620783e4994959/chocoala.svg",
+function (f) {
+	var g = f.select("g");
+	g.transform("T0,0");
+	canvas.append(g);
+	g.drag();
+});
+
+// cat
+Snap.load(
+"https://cdn.rawgit.com/khw7096/91ad4974991b541a0a958a162d689636/raw/aca5768b28b330a4f636908157c515b1419b83e7/cat.svg",
+function (f) {
+	var g = f.select("g");
+	g.transform("T150,0");
+	canvas.append(g);
+	g.drag();
+});
+</script>
+</body>
+</html>
