@@ -22,7 +22,7 @@ canvas.attr({
 	viewBox: [0,0,width,height]
 });
 // copyright
-var text = canvas.text(width/2 - 100, height-10, "© 2018. lazypic. all rights reserved");
+var text = canvas.text(width/2 - 110, height-10, "© 2018. lazypic. all rights reserved");
 text.attr({
 	'font-size':16,
 });
@@ -64,17 +64,18 @@ function (f) {
 });
 
 
-// cat
+// logo
 Snap.load(
-"https://cdn.rawgit.com/khw7096/91ad4974991b541a0a958a162d689636/raw/aca5768b28b330a4f636908157c515b1419b83e7/cat.svg",
+"https://cdn.rawgit.com/khw7096/5b5ee49b281889aca3624ad0117cc070/raw/262746b0bbf6612c4e110e924c4b4c7d4e374402/logo_100.svg",
 function (f) {
 	var g = f.select("g");
 	var t = new Snap.Matrix()
-	t.translate(0,height-150) //bottom line
+	t.translate(width/2-50,height-130) //bottom line
 	g.transform(t);
 	canvas.append(g);
 	g.drag();
 });
+
 </script>
 </body>
 </html>
