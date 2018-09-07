@@ -11,9 +11,15 @@ body {
 </head>
 <body>
 <script>
+var body = document.body,
+    html = document.documentElement;
+var width = Math.max( body.scrollWidth, body.offsetWidth,
+					   html.clientWidth, html.scrollWidth, html.offsetWidth );
+var height = Math.max( body.scrollHeight, body.offsetHeight,
+					   html.clientHeight, html.scrollHeight, html.offsetHeight );
 var canvas = Snap();
 canvas.attr({
-	viewBox: [0,0,screen.width,screen.height]
+	viewBox: [0,0,width,height]
 });
 
 // chocoala
@@ -34,7 +40,7 @@ Snap.load(
 function (f) {
 	var g = f.select("g");
 	var t = new Snap.Matrix()
-	t.translate(0,screen.height-150) //bottom line
+	t.translate(0,height-150) //bottom line
 	g.transform(t);
 	canvas.append(g);
 	g.drag();
