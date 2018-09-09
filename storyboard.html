@@ -125,7 +125,7 @@ function (f) {
 
 // ohuohu
 Snap.load(
-"https://cdn.rawgit.com/khw7096/a46740842b244570994cd99e17fb1d12/raw/4eb0c259e4733641fe07fcae4db755ea600e3fad/ohuohu.svg",
+	"https://cdn.rawgit.com/khw7096/18f35ad36175eff7b86c3fd8534fb758/raw/7069172797c4a29db3d76fce35302ad37d05199d/ohuohu.svg",
 function (f) {
 	var g = f.select("g");
 	var t = new Snap.Matrix()
@@ -208,6 +208,41 @@ function (f) {
 	g.drag();
 });
 
+// fire
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/a6805ca79977f601f57b6c081fae5ebc/raw/1fb4db83fe1757ba5fe1d3b6d4fbf13f3732eee8/fire.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(600,100)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
+// fire
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/a6805ca79977f601f57b6c081fae5ebc/raw/1fb4db83fe1757ba5fe1d3b6d4fbf13f3732eee8/broccoli.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(700,100)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
+// equability
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/e769cf16187a1fab86140cf13a2caf90/raw/e1688268ffad27ef7350e7a46757217f18111cb3/equability.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(800,100)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
 
 // logo
 Snap.load(
