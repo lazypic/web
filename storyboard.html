@@ -244,6 +244,19 @@ function (f) {
 	g.drag();
 });
 
+// fat
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/9d5361d7316394d93626c0fce223aa56/raw/52e79c69a0d938dd310848eca31e465b24e0d369/fat.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(0,200)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
+
 // logo
 Snap.load(
 "https://cdn.rawgit.com/khw7096/5b5ee49b281889aca3624ad0117cc070/raw/262746b0bbf6612c4e110e924c4b4c7d4e374402/logo_100.svg",
