@@ -352,6 +352,30 @@ function (f) {
 	g.drag();
 });
 
+// env lostain
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/c485e7738cd859eedcc8e5dfca98e833/raw/3ccd93a93b6a731e5f50619c278b86512cdd875d/lostain.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(0,300)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
+// sam
+Snap.load(
+	"https://cdn.rawgit.com/khw7096/e9c59f2208643e37a3ea953eb6e8c783/raw/f116f100861760953a46c8030d5683e43c643f3d/sam.svg",
+function (f) {
+	var g = f.select("g");
+	var t = new Snap.Matrix()
+	t.translate(100,300)
+	g.transform(t);
+	canvas.append(g);
+	g.drag();
+});
+
 
 // logo
 Snap.load(
