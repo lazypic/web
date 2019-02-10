@@ -5,7 +5,6 @@
 #### Image Server
 - S3 호스팅 비용을 줄이기 위해서 이미지는 gist를 사용합니다.
 - gist : http://gist.github.com/
-- rawgit(gist주소를 publish URL로 변경시 사용) : https://rawgit.com
 - flickr : https://www.flickr.com/photos/161844533@N02/
 
 #### Reference
