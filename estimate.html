@@ -1,0 +1,161 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css"></link>
+	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+      <link rel="stylesheet" href="css/estimate.css" />
+      <title>Estimate</title>
+   </head>
+   <body>
+   <h1>ESTIMATE<img src="http://lazypic.org/images/doc_cal.svg" width="60" id="logo"></h1>
+   <div class="comment">
+   <div id="docnum"></div>
+   <div id="writeDate"></div>
+   </div>
+   <h2 id="doctitle">Title</h2>
+   <input id="doctitleInput" size="35" placeholder="Estimate Title">
+   <div>
+   <table width="100%">
+   <thead>
+   <tr>
+   <th width="50%">Service Provider</td>
+   <th></td>
+   <th width="50%">Customer</td>
+   </tr>
+   <tbody>
+   <tr>
+	   <td>Name : 김한웅</td>
+	   <td></td>
+	   <td>Name : <input placeholder="Name"></td>
+	</tr>
+   <tr>
+   <td>Phone : <a href="tel:821094117096">+82 010 9411 7096</a></td>
+   <td></td>
+	   <td>Phone : <input placeholder="+82 010 0000 0000"></td>
+	</tr>
+   <tr>
+   <td>E-mail : <a href="mailto:hello@lazypic.org">hello@lazypic.org</a></td>
+   <td></td>
+   <td>E-mail : <input placeholder="id@gmail.com"></td></tr>
+   <tr>
+   <td>Address : <input placeholder="Address" size="30"></td>
+   <td></td>
+   <td>Address : <input placeholder="Address" size="30"></td></tr>
+   </tbody>
+   </table>
+   </div>
+   <div>
+	  <h3>SUMMARY</h3>
+	  <table width="100%">
+	  <tr>
+	  	<th width="60%">구 분</th>
+		<th width="40%">금 액</th>
+	  </tr>
+	  <tr>
+	  	<td>Total(합계)</td>
+	  	<td id="total" align="right"></td>
+	  </tr>
+	  <tr>
+	  	<td>WithHolding Tax(원천징수)</td>
+	  	<td id="withholdingTax" align="right"></td>
+	  </tr>
+	  <tr>
+	  	<td>Total - WithHolding Tax</td>
+	  	<td id="personal" align="right"></td>
+	  </tr>
+	  </table>
+	  <!--
+	  VAT(부가가치세) <div id="vat">0</div>
+	  법인(합계+VAT)<div id="company">0</div>
+	  -->
+	</div>
+	<div>
+	<h3>DETAIL FOR CONSOLIDATED BILL</h3>
+     <!--item input-->
+	<div id="itemInput">
+	 <select id="type" name="type">
+	 	<option value="Service">Service</option>
+	 	<option value="Research">Research</option>
+	 	<option value="Seminar">Seminar</option>
+	 	<option value="Consulting">Consulting</option>
+		<option value="Software">Software</option>
+		<option value="Artswork">Artswork</option>
+	 </select>
+      <input id="title" size="35" placeholder="title">
+      <input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour">H
+      <input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers">Pers
+      <input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge">
+	  <button id="add" type="button">ADD</button>
+	</div>
+	  <!--list-->
+	  <table width="100%">
+	  <thead>
+		  <tr>
+			  <th width="80">Type</th>
+			  <th>Title</th>
+			  <th width="40">Hour</th>
+			  <th width="40">Pers</th>
+			  <th width="40">SAR</th>
+			  <th width="90">Charge</th>
+			  <th width="90">SubTotal</th>
+			  <th width="40">DR</th>
+			  <th width="90">Total</th>
+		  </tr>
+	  </thead>
+	  <tbody id="list">
+	  </tbody>
+	  <tfoot>
+		  <tr>
+			  <th></th>
+			  <th></th>
+			  <th id="itemsHour" align="right"></th>
+			  <th></th>
+			  <th></th>
+			  <th id="itemsCharge" align="right"></th>
+			  <th id="itemsSubTotal" align="right"></th>
+			  <th></th>
+			  <th id="itemsTotal" align="right"></th>
+		  </tr>
+	  </tfoot>
+	  </table>
+	  <div class="comment">
+	  SAR : Scope of Application Rate<br>
+	  DR : Discount Rate<br>
+	  Pers : 사용인원(적용 인원)</div>
+	  </div>
+	  <h3>INFOMATION</h3>
+	  <ul>
+	  <li>Website : <a href="https://lazypic.org">http://lazypic.org</a></li>
+	  <li>본 견적서의 유효기간은 작성일로부터 30일 입니다.</li>
+	<li>한 업무(TASK)에 최소 1시간 업무단위를 책정합니다.</li>
+	  <li>SAR(Scope of Application Rate) / 적용비율 기준</li>
+	  	<ul>
+			<li>같은 소프트웨어라도 회사 인원규모대비 프로그램의 가치가 달라집니다.</li>
+			<li>5명 미만의 회사는 적용비율을 1.0으로 계산합니다.</li>
+			<li>5명 이상부터는 적용비율을 1.0 + ( 인원 x 0.0005 ) 비율로 계산합니다.</li>
+		</ul>
+	<li>인건비 산정근거
+	<ul>
+	<li>2018년도 SW기술자 표준임금표 <a href="https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033">https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033</a></li>
+	<li>원천징수세율 : <a href="https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811">https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811</a></li>
+	<li>프리랜서 등 원천징수대상 일부 사업소득 : 3.3%</li>
+	<li>코드 작성에 사용된 업무시간 계산방법 : <a href="https://github.com/lazypic/git-hours">https://github.com/lazypic/git-hours</a></li>
+	</ul>
+	</ul>
+   <div>
+   <center>
+   <img src="http://lazypic.org/images/logo_v02.svg" onclick="inputMode()" width="100">
+   <div id="link">
+   	<button onclick="printMode()">인쇄모드</button><br>
+  	 <a href="https://github.com/lazypic/estimate">Github</a> / <a href="https://github.com/lazypic/estimate/issues">Issue</a><br>
+	 하단 Lazypic 로고를 클릭하면 입력모드로 돌아갑니다.
+
+   </div>
+   </center>
+   </div>
+   </body>
+   <script src="js/estimate.js"></script>
+ </html>
