@@ -1,0 +1,52 @@
+body {
+	font-family: "Nanum Gothic", "NanumSquare", "Merriweather", "Helvetica Neue", Arial, sans-serif;
+	max-width: 870px;
+	padding: 10px;
+}
+
+#logo {
+	margin: -15 auto;
+	margin-left: 10;
+}
+
+h1 {
+	font-size: 30pt;
+	text-align: right;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+h3 {
+	font-size: 11pt;
+}
+
+.comment {
+	font-size: 8pt;
+	text-align: right;
+}
+
+table {
+	border: 1px solid #000;
+	width: 100%;
+}
+
+th,td {
+	font-size: 9pt;
+	border-bottom: 1px solid #000;
+}
+
+li {
+	font-size: 9pt;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.item:hover {
+	text-decoration: line-through;
+	color: #FF0000;
+}
