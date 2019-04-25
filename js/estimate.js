@@ -121,8 +121,8 @@ function removeItem(e) {
 }
 
 // 클라이언트가 입급하기 편하도록 만원단위로 바꾼다.
-function round(n) {
-	return Math.round(n*0.001) * 1000
+function floor(n) {
+	return Math.floor(n*0.0001) * 10000
 }
 
 function updateTotal() {
@@ -136,7 +136,7 @@ function updateTotal() {
 		itemsSubTotal += doc.items[i]["subtotal"];
 		itemsTotal += doc.items[i]["total"];
 	}
-	itemsTotal = round(itemsTotal);
+	itemsTotal = floor(itemsTotal);
 	document.getElementById("total").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal)
 	document.getElementById("withholdingTax").innerHTML = doc.unit + " " + numberWithCommas(Math.round(itemsTotal * 0.033))
 	document.getElementById("personal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal - Math.round(itemsTotal * 0.033))
