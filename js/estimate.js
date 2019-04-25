@@ -62,8 +62,8 @@ function newItem() {
 	doc.items.push(item)
 	tr.setAttribute("id", id);
 	tr.setAttribute("class","item")
-	var chargeWithCommas = doc.unit + " " + numberWithCommas(charge);
 	var subTotalWithCommas = doc.unit + " " + numberWithCommas(subtotal);
+	var chargeWithCommas = doc.unit + " " + numberWithCommas(charge);
 	var totalWithCommas = doc.unit + " " + numberWithCommas(total);
     var iType = document.createElement("td");
 	iType.appendChild(document.createTextNode(type))
@@ -120,6 +120,11 @@ function removeItem(e) {
 	updateTotal();
 }
 
+// 클라이언트가 입급하기 편하도록 만원단위로 바꾼다.
+function round(n) {
+	return Math.round(n*0.001) * 1000
+}
+
 function updateTotal() {
 	var itemsHour = 0;
 	var itemsCharge = 0;
@@ -131,6 +136,7 @@ function updateTotal() {
 		itemsSubTotal += doc.items[i]["subtotal"];
 		itemsTotal += doc.items[i]["total"];
 	}
+	itemsTotal = round(itemsTotal);
 	document.getElementById("total").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal)
 	document.getElementById("withholdingTax").innerHTML = doc.unit + " " + numberWithCommas(Math.round(itemsTotal * 0.033))
 	document.getElementById("personal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal - Math.round(itemsTotal * 0.033))
