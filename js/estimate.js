@@ -1,3 +1,6 @@
+const netIncome = 1.1; // 순이익율
+const taxRate = 0.033; // 원천세율
+
 var doc = {
 	title:"",
 	num:"",
@@ -45,8 +48,7 @@ function newItem() {
 		sar = 1.0 + (pers * 0.0005)
 	}
 	var subtotal = Math.round(hour * sar * charge);
-	var discount = 1.0;
-	var total = discount * subtotal;
+	var total = Math.round(netIncome * subtotal);
     var tbody = document.getElementById("list");
     var tr = document.createElement("tr");
 	var item = {};
@@ -57,7 +59,7 @@ function newItem() {
 	item["pers"] = pers;
 	item["charge"] = charge;
 	item["subtotal"] = subtotal;
-	item["discount"] = discount;
+	item["netIncome"] = netIncome;
 	item["total"] = total;
 	doc.items.push(item)
 	tr.setAttribute("id", id);
@@ -86,7 +88,7 @@ function newItem() {
 	iSubTotal.appendChild(document.createTextNode(subTotalWithCommas))
     var iDiscount = document.createElement("td");
 	iDiscount.setAttribute("align","right")
-	iDiscount.appendChild(document.createTextNode(discount))
+	iDiscount.appendChild(document.createTextNode(netIncome))
     var iTotal = document.createElement("td");
 	iTotal.setAttribute("align","right")
 	iTotal.appendChild(document.createTextNode(totalWithCommas))
@@ -136,10 +138,10 @@ function updateTotal() {
 		itemsSubTotal += doc.items[i]["subtotal"];
 		itemsTotal += doc.items[i]["total"];
 	}
-	itemsTotal = floor(itemsTotal);
-	document.getElementById("total").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal)
-	document.getElementById("withholdingTax").innerHTML = doc.unit + " " + numberWithCommas(Math.round(itemsTotal * 0.033))
-	document.getElementById("personal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal - Math.round(itemsTotal * 0.033))
+	floorItemsTotal = floor(itemsTotal);
+	document.getElementById("total").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal)
+	document.getElementById("withholdingTax").innerHTML = doc.unit + " " + numberWithCommas(Math.round(floorItemsTotal * taxRate))
+	document.getElementById("personal").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - Math.round(floorItemsTotal * taxRate))
 	document.getElementById("itemsHour").innerHTML = itemsHour
 	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge)
 	document.getElementById("itemsSubTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsSubTotal)
