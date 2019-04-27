@@ -95,7 +95,28 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+.nanumsquare {
+  font-family: 'NanumSquare', sans-serif !important;
+  font-weight: 300;
+}
+
+.banner {
+  width: 400px;
+  height: 107px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    width: 600px;
+    height: 160px;
+  }
+}
+
 @media (min-width: 992px) {
+  .banner {
+    width: 600px;
+    height: 160px;
+  }
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -138,9 +159,9 @@ img::-moz-selection {
 }
 
 
-
-.nanumsquare {
-  font-family: 'NanumSquare', sans-serif !important;
-  font-weight: 300;
+@media (min-width: 1200px) {
+  .banner {
+    width: 600px;
+    height: 160px;
+  }
 }
-
