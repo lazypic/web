@@ -1,45 +1,349 @@
-
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Character Contents Studio">
-    <meta name="author" content="lazypic">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="lazypic homepage">
+	<meta name="author" content="lazypic">
     <link rel="icon" href="images/webicon.png">
     <link rel="apple-touch-icon" href="images/webicon.png"> <!--Apple Icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
+    
     <title>LAZYPIC</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="preload" href="./img/cameraTracking.jpg" as="image">
+    <link rel="preload" href="./img/objectTracking.jpg" as="image">
+    <link rel="preload" href="./img/rotomation.jpg" as="image">
+    <link href="css/creative.css" rel="stylesheet">
   </head>
 
   <body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://lazypic.org/#page-top">LAZYPIC</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#content">Content</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#development">Development</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#donation">Donation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/login?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/signup?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/logout?client_id=4q2hukd8jle8bj8uoaihb52och&logout_uri=https://lazypic.org">SignOut</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   
-  <section>
-    <div class="p-5 mx-auto text-center">
-      <h3>
-          <img src="https://cdn.rawgit.com/khw7096/384623494643591165e71cfe9a35f3a8/raw/dcf28267da24be7dd3062cd5992a9ef1d1b73e5f/circle_green2blue.svg">
-      </h3>
-        <div class="text-secondary">
+<div class="p-5 mx-auto text-center">
+  <h3>
+      <img src="https://cdn.rawgit.com/khw7096/384623494643591165e71cfe9a35f3a8/raw/dcf28267da24be7dd3062cd5992a9ef1d1b73e5f/circle_green2blue.svg">
+  </h3>
+  <div class="text-secondary">
     Blender 파이프라인 테스트를 위한 16마리 동물 캐릭터 애니메이션.<br>
-    Create Blender pipeline & 16 Animal Life.</div>
+    Create Blender pipeline & 16 Animal Life.
+  </div>
+</div>
+
+<section class="p-0 bg-white" id="portfolio">
+  <div class="container-fluid p-0">
+
+    <div class="row no-gutters popup-gallery">
+      <div class="col-lg-3 col-md-3 text-center">
+        <a class="portfolio-box" href="https://www.instagram.com/p/BxmOb98HIUl/media?size=l">
+          <img class="img-fluid" src="https://www.instagram.com/p/BxmOb98HIUl/media?size=m" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Chocoala
+              </div>
+              <div class="project-name">
+                Chocoala
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="https://www.instagram.com/p/Bx7bm2IH5xz/media?size=l">
+          <img class="img-fluid" src="https://www.instagram.com/p/Bx7bm2IH5xz/media?size=m" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Gold
+              </div>
+              <div class="project-name">
+                Gold
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="https://www.instagram.com/p/Bx7cI4lHhG7/media?size=l">
+          <img class="img-fluid" src="https://www.instagram.com/p/Bx7cI4lHhG7/media?size=m" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Mamma
+              </div>
+              <div class="project-name">
+                Mamma
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="https://www.instagram.com/p/Bx7c0HAH8R4/media?size=l">
+          <img class="img-fluid" src="https://www.instagram.com/p/Bx7c0HAH8R4/media?size=m" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Greedy
+              </div>
+              <div class="project-name">
+                Greedy
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-  </section>
+
+    <div class="row no-gutters popup-gallery">
+      <div class="col-lg-3 col-md-3 text-center">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Pepe
+              </div>
+              <div class="project-name">
+                Pepe
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Alualu
+              </div>
+              <div class="project-name">
+                Alualu
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Dr.P
+              </div>
+              <div class="project-name">
+                Dr.P
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Hulabear
+              </div>
+              <div class="project-name">
+                Hulabear
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row no-gutters popup-gallery">
+      <div class="col-lg-3 col-md-3 text-center">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Joy
+              </div>
+              <div class="project-name">
+                Joy
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Ohuohu
+              </div>
+              <div class="project-name">
+                Ohuohu
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Pinball
+              </div>
+              <div class="project-name">
+                Pinball
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Richard
+              </div>
+              <div class="project-name">
+                Richard
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row no-gutters popup-gallery">
+      <div class="col-lg-3 col-md-3 text-center">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Spadoo
+              </div>
+              <div class="project-name">
+                Spadoo
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Su
+              </div>
+              <div class="project-name">
+                Su
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Sam
+              </div>
+              <div class="project-name">
+                Sam
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <a class="portfolio-box" href="./images/hidechar.svg">
+          <img class="img-fluid" src="./images/hidechar.svg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Risa
+              </div>
+              <div class="project-name">
+                Risa
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pt-3 mx-auto text-center">
+    <h3><a name="contents"></a>Fur test</h3>
+    <div class="text-secondary">
+	  	블랜더를 활용한 털 테스트<br>
+      <img src="https://lh3.googleusercontent.com/M9877bg-PbxNkVysaGYnh9W_bYi4Q6Y-gpnSxn20zg0Ul7xKbsKRDUObndrLnzPtDi21KpzGTcu2pUuIzHTxSGR-imMcjwDLXXNPqCVcjFtwf1zyy3LGSMrVKEcyfbDV0ivAJBxyT7FeOSYmh0c37zFa3CngI235whZUBl8nybanRuPy-r5RGcDvYefZHWV_8vMyEgKT_zxVaomZxYuACyAyQGUoSdnJhdhvlEAhd6nbQJIOmp4IK225sv40aK-3lcQ4lqwh-5UGwfh1yEQJsanz8NHSgTkHpLhObOg7cM8jf0VWW9sU2_a91CQa72pUhFGDVokApZa9xBlfERKhZMS2hj0W3dh6daR865p-OBpN-4nWPil6Diz-L6_VQ2Wfl6PI7QmjwCTXA_pqi6VWqGsHxy8ZP8nzUDz7fdDFa8OYqe57CGjUs6neScbMVRAyCt9sHOV_Aj9zLMSHEfConehHp0GFFPrbGMVQ_En8n4L1fCNO8psVmo0-i09HKWXzscOzBVsbrr4EDDjYKaz8PHOCS95KoPOS6RHXhU3Cpp3gKVb91VkZUXdV4ZPFzHX9yyPUKheOZ6RpLkD3KN68w4SzcvU2dv2JQNR1DCzKQrgZ_-QQswk1Q6QYVgSQPJHbetWOqaUtTDrkN-93QsP4zJUnnDZdvnB46qGYzMuVNyQOT9l8XfwsuL8zLg=w536-h614-no" class="img-fluid">
+    </div>
+  </div>
+</section>
 
   <section>
-    <div class="pt-3 mx-auto text-center">
-        <h3><a name="contents"></a>Fur test</h3>
-        <div class="text-secondary">
-		블랜더를 활용한 털 테스트<br>
-            <img src="https://lh3.googleusercontent.com/M9877bg-PbxNkVysaGYnh9W_bYi4Q6Y-gpnSxn20zg0Ul7xKbsKRDUObndrLnzPtDi21KpzGTcu2pUuIzHTxSGR-imMcjwDLXXNPqCVcjFtwf1zyy3LGSMrVKEcyfbDV0ivAJBxyT7FeOSYmh0c37zFa3CngI235whZUBl8nybanRuPy-r5RGcDvYefZHWV_8vMyEgKT_zxVaomZxYuACyAyQGUoSdnJhdhvlEAhd6nbQJIOmp4IK225sv40aK-3lcQ4lqwh-5UGwfh1yEQJsanz8NHSgTkHpLhObOg7cM8jf0VWW9sU2_a91CQa72pUhFGDVokApZa9xBlfERKhZMS2hj0W3dh6daR865p-OBpN-4nWPil6Diz-L6_VQ2Wfl6PI7QmjwCTXA_pqi6VWqGsHxy8ZP8nzUDz7fdDFa8OYqe57CGjUs6neScbMVRAyCt9sHOV_Aj9zLMSHEfConehHp0GFFPrbGMVQ_En8n4L1fCNO8psVmo0-i09HKWXzscOzBVsbrr4EDDjYKaz8PHOCS95KoPOS6RHXhU3Cpp3gKVb91VkZUXdV4ZPFzHX9yyPUKheOZ6RpLkD3KN68w4SzcvU2dv2JQNR1DCzKQrgZ_-QQswk1Q6QYVgSQPJHbetWOqaUtTDrkN-93QsP4zJUnnDZdvnB46qGYzMuVNyQOT9l8XfwsuL8zLg=w536-h614-no" class="img-fluid">
-        </div>
-    </div>
-  </section>
-<section>
     <div class="pt-3 mx-auto text-center">
       <h3><a name="contents"></a>Plant instance test</h3>
       <div class="text-secondary">
@@ -49,7 +353,7 @@
     </div>
 </section>
 
-<section>
+<section class="p-5">
 	<div class="pt-3 mx-auto text-center">
         <h3><a name="contents"></a>Storyboard</h3>
         <div class="text-secondary">
@@ -61,57 +365,61 @@
   </div>
 </section>
 
-	<div class="pt-5"></div>
-
-    
-      <footer class="pt-5 border-top text-center">
-        <div class="row">
-          <div class="col-6 col-md">
-            <img class="mb-2" src="https://cdn.rawgit.com/khw7096/e2537be55285cb84dbda28ae0b9063de/raw/001d6a01d9284f49e7159f0d0eb31d709a01c739/logo.svg" alt="" width="90" height="90">
-            <small class="d-block mb-3 text-muted">&copy; 2018. lazypic. all rights reserved</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Social</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://plus.google.com/101367408042947888211">Google+</a></li>
-              <li><a class="text-muted" href="https://www.facebook.com/groups/1507793305992700/">Facebook</a></li>
-              <li><a class="text-muted" href="https://www.instagram.com/lazypic_insta">Instagram</a></li>
-              <li><a class="text-muted" href="http://pf.kakao.com/_xdxbxacC">KaKaoPlusFriend</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Contents</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://youtube.lazypic.org">Youtube</a></li>
-              <li><a class="text-muted" href="https://brunch.co.kr/@lazypic">Brunch</a></li>
-              <li><a class="text-muted" href="https://tumblbug.com/lazypic">Tumblbug</a></li>
-              <li><a class="text-muted" href="https://github.com/lazypic">Github</a></li>
-              <li><a class="text-muted" href="https://lazypic.github.io">Dev Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Tools</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="storyboard.html">Storyboard</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+<footer class="pt-5 border-top text-center">
+    <div class="row">
+      <div class="col-6 col-md">
+      <img class="mb-2" src="images/link.svg">
+      <small class="d-block mb-3 text-muted">&copy; 2018-2019. lazypic.<br>all rights reserved</small>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Social</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://www.youtube.com/channel/UCHsxW9hros1VlKKd4HAvG8A">Youtube</a></li>
+        <li><a class="text-muted" href="https://brunch.co.kr/@lazypic">Brunch</a></li>
+        <li><a class="text-muted" href="https://www.facebook.com/groups/1507793305992700/">Facebook</a></li>
+        <li><a class="text-muted" href="https://www.instagram.com/lazypic_insta">Instagram</a></li>
+        <li><a class="text-muted" href="http://pf.kakao.com/_xdxbxacC">KaKaoPlusFriend</a></li>
+      </ul>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Legal</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="terms.html">Terms & Conditions</a></li>
+        <li><a class="text-muted" href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Tools</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://lazypic.org/storyboard.html">Storyboard</a></li>
+        <li><a class="text-muted" href="https://www.youtube.com/channel/UC0L_YtB4PWSkOwp2m9587MA/playlists?view_as=subscriber">ClipLibrary</a></li>
+        <li><a class="text-muted" href="https://lazypic.slack.com">Slack</a></li>
+        <li><a class="text-muted" href="http://lazypic.org/estimate.html">Estimate</a></li>
+        <li><a class="text-muted" href="https://calendar.google.com/calendar/embed?src=khw7096%40gmail.com&ctz=Asia%2FSeoul">Calendar</a></li>
+        <li><a class="text-muted" href="https://lazypic.github.io">Dev Blog</a></li>
+      </ul>
+      </div>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
-  </body>
-</html>
+    </footer>
+    
+    
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+        <script src="js/creative.min.js"></script>
+        <script>
+          Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+          });
+        </script>
+      </body>
+    </html>
+    
