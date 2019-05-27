@@ -109,10 +109,18 @@ img::-moz-selection {
   height: 80px;
 }
 
+.lazypic {
+  width: 400px;
+  height: 400px;
+}
 @media (min-width: 768px) {
   .banner {
     width: 600px;
     height: 160px;
+  }
+  .lazypic {
+    width: 500px;
+    height: 500px;
   }
 }
 
