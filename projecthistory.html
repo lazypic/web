@@ -1,43 +1,60 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Character Contents Studio">
-    <meta name="author" content="lazypic">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="lazypic homepage">
+	<meta name="author" content="lazypic">
     <link rel="icon" href="images/webicon.png">
     <link rel="apple-touch-icon" href="images/webicon.png"> <!--Apple Icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
-    <title>LAZYPIC</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
+    <!-- Custom style -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!-- Plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <title>LAZYPIC</title>
   </head>
 
   <body>
-
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">
-          <a href="http://lazypic.org">
-		  <img src="https://cdn.rawgit.com/khw7096/738bfc9a1674e1f63aa613e43c0e4b08/raw/b7fe4afafcc19ebc8a831bcd645099c133799506/lazypic_text.svg" alt="lazypic_text" width="140" height="30">
-		  </a>
-      </h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="http://lazypic.org/#about">About</a>
-        <a class="p-2 text-dark" href="http://lazypic.org/#contents">Contents</a>
-        <a class="p-2 text-dark" href="http://lazypic.org/#contact">Contact</a>
-        <a class="p-2 text-dark" href="http://lazypic.org/#donation">Donation</a>
-      </nav>
-      <!-- Login
-      <nav class="my-2 my-md-0 mr-md-3">
-            <a class="btn btn-outline-dark" href="#">Sign in</a>
-            <a class="btn btn-outline-dark" href="#">Sign up</a>
-      </nav>
-      -->
-      
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://lazypic.org/#page-top">LAZYPIC</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#content">Content</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#development">Development</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#donation">Donation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/login?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/signup?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/logout?client_id=4q2hukd8jle8bj8uoaihb52och&logout_uri=https://lazypic.org">SignOut</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
 
     <div class="container pt-5 text-center">
         <h3><a name="contents"></a>2018</h3>
@@ -97,54 +114,62 @@
 	<div class="pt-5"></div>
 
     
-      <footer class="pt-5 border-top text-center">
-        <div class="row">
-          <div class="col-6 col-md">
-            <img class="mb-2" src="https://cdn.rawgit.com/khw7096/e2537be55285cb84dbda28ae0b9063de/raw/001d6a01d9284f49e7159f0d0eb31d709a01c739/logo.svg" alt="" width="90" height="90">
-            <small class="d-block mb-3 text-muted">&copy; 2018. lazypic. all rights reserved</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Social</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://plus.google.com/101367408042947888211">Google+</a></li>
-              <li><a class="text-muted" href="https://www.facebook.com/groups/1507793305992700/">Facebook</a></li>
-              <li><a class="text-muted" href="https://www.instagram.com/lazypic_insta">Instagram</a></li>
-              <li><a class="text-muted" href="http://pf.kakao.com/_xdxbxacC">KaKaoPlusFriend</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Contents</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://youtube.lazypic.org">Youtube</a></li>
-              <li><a class="text-muted" href="https://brunch.co.kr/@lazypic">Brunch</a></li>
-              <li><a class="text-muted" href="https://tumblbug.com/lazypic">Tumblbug</a></li>
-              <li><a class="text-muted" href="https://github.com/lazypic">Github</a></li>
-              <li><a class="text-muted" href="https://lazypic.github.io">Dev Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Tools</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="storyboard.html">Storyboard</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+<footer class="pt-5 border-top text-center">
+    <div class="row">
+      <div class="col-6 col-md">
+      <img class="mb-2" src="images/link.svg">
+      <small class="d-block mb-3 text-muted">&copy; 2018-2019. lazypic.<br>all rights reserved</small>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Social</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://www.youtube.com/channel/UCHsxW9hros1VlKKd4HAvG8A">Youtube</a></li>
+        <li><a class="text-muted" href="https://brunch.co.kr/@lazypic">Brunch</a></li>
+        <li><a class="text-muted" href="https://www.facebook.com/groups/1507793305992700/">Facebook</a></li>
+        <li><a class="text-muted" href="https://www.instagram.com/lazypic_insta">Instagram</a></li>
+        <li><a class="text-muted" href="http://pf.kakao.com/_xdxbxacC">KaKaoPlusFriend</a></li>
+      </ul>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Legal & Policy</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="welcome.html">Welcome</a></li>
+        <li><a class="text-muted" href="terms.html">Terms & Conditions</a></li>
+        <li><a class="text-muted" href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      </div>
+      <div class="col-6 col-md">
+      <h5>Tools</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://lazypic.org/storyboard.html">Storyboard</a></li>
+        <li><a class="text-muted" href="https://www.youtube.com/channel/UC0L_YtB4PWSkOwp2m9587MA/playlists?view_as=subscriber">ClipLibrary</a></li>
+        <li><a class="text-muted" href="https://lazypic.slack.com">Slack</a></li>
+        <li><a class="text-muted" href="http://lazypic.org/estimate.html">Estimate</a></li>
+        <li><a class="text-muted" href="https://calendar.google.com/calendar/embed?src=khw7096%40gmail.com&ctz=Asia%2FSeoul">Calendar</a></li>
+        <li><a class="text-muted" href="https://lazypic.github.io">Dev Blog</a></li>
+      </ul>
+      </div>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
-  </body>
-</html>
+    </footer>
+    
+    
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+        <script src="js/creative.min.js"></script>
+        <script>
+          Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+          });
+        </script>
+      </body>
+    </html>
+    
