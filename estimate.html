@@ -11,13 +11,13 @@
       <title>Estimate</title>
    </head>
    <body>
-   <h1>ESTIMATE<img src="http://lazypic.org/images/doc_cal.svg" width="60" id="logo"></h1>
+   <h1 class="pt-5">ESTIMATE<img src="http://lazypic.org/images/doc_cal.svg" width="60" id="logo"></h1>
    <div class="comment">
    <div id="docnum"></div>
    <div id="writeDate"></div>
    </div>
-   <h2 id="doctitle">Title</h2>
-   <input id="doctitleInput" size="35" placeholder="Estimate Title">
+   <h2 id="doctitle">Title:</h2>
+   <input id="doctitleInput" size="40" placeholder="Estimate Title" class="m-1">
    <div>
    <table width="100%">
    <thead>
@@ -30,7 +30,7 @@
    <tr>
 	   <td>Name : <input placeholder="Service Provider Name"></td>
 	   <td></td>
-	   <td>Name : <input placeholder="Customer Name"></td>
+	   <td>Name : <input placeholder="Customer Name">귀중</td>
 	</tr>
    <tr>
 	<td>Phone : <input placeholder="+82 010 0000 0000"></td>
@@ -42,9 +42,9 @@
    <td></td>
    <td>E-mail : <input placeholder="E-mail"></td></tr>
    <tr>
-   <td>Address : <input placeholder="Address" size="35"></td>
+   <td>Address : <input placeholder="Address" size="47"></td>
    <td></td>
-   <td>Address : <input placeholder="Address" size="35"></td></tr>
+   <td>Address : <input placeholder="Address" size="47"></td></tr>
    </tbody>
    </table>
    </div>
@@ -56,20 +56,20 @@
 		<th width="40%">금 액</th>
 	  </tr>
 	  <tr>
-	  	<td>지급총액(세전)</td>
-	  	<td id="preTax" align="right"></td>
+	  	<td>&nbsp;&nbsp;지급총액 (세전)</td>
+	  	<td id="preTax" class="text-right"></td>
 	  </tr>
 	  <tr>
-	  	<td>소득세</td>
-	  	<td id="incomeTax" align="right"></td>
+	  	<td>&nbsp;&nbsp;소득세</td>
+	  	<td id="incomeTax" class="text-right"></td>
 	  </tr>
 	  <tr>
-		<td>지방소득세</td>
-		<td id="localIncomeTax" align="right"></td>
+		<td>&nbsp;&nbsp;지방소득세</td>
+		<td id="localIncomeTax" class="text-right"></td>
 	  </tr>
 	  <tr>
-	  	<td>계(세후)</td>
-	  	<td id="afterTax" align="right"></td>
+	  	<td>&nbsp;&nbsp;계 (세후)</td>
+	  	<td id="afterTax" class="text-right"></td>
 	  </tr>
 	  </table>
 	  <!--
@@ -80,8 +80,8 @@
 	<div>
 	<h5 class="pt-5">DETAIL FOR CONSOLIDATED BILL</h5>
      <!--item input-->
-	<div id="itemInput" class="p-3 row">
-	 <select id="type" name="type" class="form-control col-2">
+	<div id="itemInput" class="p-3 row input-group">
+	 <select id="type" name="type" class="form-control col-2 btn btn-sm">
 	 	<option value="Service">Service</option>
 	 	<option value="Research">Research</option>
 	 	<option value="Seminar">Seminar</option>
@@ -89,7 +89,7 @@
 		<option value="Software">Software</option>
 		<option value="Artswork">Artswork</option>
 	 </select>
-      <input id="title" size="35" placeholder="title" class="col-4">
+      <input id="title" placeholder="title" class="col-5">
       <input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour" class="col-1">H
       <input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers" class="col-1">Pers
       <input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="col-2">
@@ -99,8 +99,8 @@
 	  <table width="100%">
 	  <thead>
 		  <tr>
-			  <th width="80" class="text-center">Type</th>
-			  <th>Title</th>
+			  <th width="80">Type</th>
+			  <th >Title</th>
 			  <th width="40" class="text-right">Hour</th>
 			  <th width="40" class="text-right">Pers</th>
 			  <th width="40" class="text-right">SAR</th>
@@ -131,7 +131,7 @@
 	  NI : Net Income Rate(인건비 제외 순수익율 10%)<br>
 	  Pers : 사용인원(적용 인원)</div>
 	  </div>
-	  <h3>INFOMATION</h3>
+	  <h5>INFOMATION</h5>
 	  <ul>
 	  <li>Website : <a href="https://lazypic.org" class="text-dark">https://lazypic.org</a></li>
 	  <li>본 견적서의 유효기간은 작성일로부터 30일 입니다.</li>
@@ -154,7 +154,7 @@
    <center>
    <img src="https://lazypic.org/images/logo_v02.svg" onclick="inputMode();" width="100">
    <div id="link">
-   	<button onclick="printMode()">인쇄모드</button><br>
+   <button class="btn btn-dark" onclick="printMode()">Print document</button><br>
   	 <a href="https://github.com/lazypic/web">Github</a> / <a href="https://github.com/lazypic/web/issues">Issue</a><br>
 	 하단 Lazypic 로고를 클릭하면 입력모드로 돌아갑니다.
 

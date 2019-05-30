@@ -34,25 +34,25 @@ function newTitle() {
 }
 
 function newItem() {
-    var title = document.getElementById("title").value;
+    let title = document.getElementById("title").value;
 	if ( title == "" ) {
 		return
 	};
-	var d = new Date();
-	var id = d.getTime();
-	var type = document.getElementById("type").value;
-	var hour = Number(document.getElementById("hour").value);
-	var pers = Number(document.getElementById("pers").value);
-	var charge = Number(document.getElementById("charge").value);
-	var sar = 1.0
+	let d = new Date();
+	let id = d.getTime();
+	let type = document.getElementById("type").value;
+	let hour = Number(document.getElementById("hour").value);
+	let pers = Number(document.getElementById("pers").value);
+	let charge = Number(document.getElementById("charge").value);
+	let sar = 1.0
 	if ( pers > 4 ) {
 		sar = 1.0 + (pers * 0.0005)
 	}
-	var subtotal = Math.round(hour * sar * charge);
-	var total = Math.round(netIncome * subtotal);
-    var tbody = document.getElementById("list");
-    var tr = document.createElement("tr");
-	var item = {};
+	let subtotal = Math.round(hour * sar * charge);
+	let total = Math.round(netIncome * subtotal);
+    let tbody = document.getElementById("list");
+    let tr = document.createElement("tr");
+	let item = {};
 	item["id"] = id;
 	item["type"] = type;
 	item["title"] = title;
@@ -62,51 +62,53 @@ function newItem() {
 	item["subtotal"] = subtotal;
 	item["netIncome"] = netIncome;
 	item["total"] = total;
-	doc.items.push(item)
+	doc.items.push(item);
 	tr.setAttribute("id", id);
-	tr.setAttribute("class","item")
-	var subTotalWithCommas = doc.unit + " " + numberWithCommas(subtotal);
-	var chargeWithCommas = doc.unit + " " + numberWithCommas(charge);
-	var totalWithCommas = doc.unit + " " + numberWithCommas(total);
-    var iType = document.createElement("td");
-	iType.appendChild(document.createTextNode(type))
-    var iTitle = document.createElement("td");
-	iTitle.appendChild(document.createTextNode(title))
-    var iHour = document.createElement("td");
-	iHour.setAttribute("align","right")
-	iHour.appendChild(document.createTextNode(hour))
-    var iPers = document.createElement("td");
-	iPers.setAttribute("align","right")
-	iPers.appendChild(document.createTextNode(pers))
-    var iSar = document.createElement("td");
-	iSar.setAttribute("align","right")
-	iSar.appendChild(document.createTextNode(sar))
-    var iCharge = document.createElement("td");
-	iCharge.setAttribute("align","right")
-	iCharge.appendChild(document.createTextNode(chargeWithCommas))
-    var iSubTotal = document.createElement("td");
-	iSubTotal.setAttribute("align","right")
-	iSubTotal.appendChild(document.createTextNode(subTotalWithCommas))
-    var iDiscount = document.createElement("td");
-	iDiscount.setAttribute("align","right")
-	iDiscount.appendChild(document.createTextNode(netIncome))
-    var iTotal = document.createElement("td");
-	iTotal.setAttribute("align","right")
-	iTotal.appendChild(document.createTextNode(totalWithCommas))
+	tr.setAttribute("class","item");
+	let subTotalWithCommas = doc.unit + " " + numberWithCommas(subtotal);
+	let chargeWithCommas = doc.unit + " " + numberWithCommas(charge);
+	let totalWithCommas = doc.unit + " " + numberWithCommas(total);
+    let iType = document.createElement("td");
+	iType.appendChild(document.createTextNode(type));
+	iType.setAttribute("class","text-center");
+	let iTitle = document.createElement("td");
+	iTitle.setAttribute("class","text-center");
+	iTitle.appendChild(document.createTextNode(title));
+    let iHour = document.createElement("td");
+	iHour.setAttribute("class","text-right");
+	iHour.appendChild(document.createTextNode(hour));
+    let iPers = document.createElement("td");
+	iPers.setAttribute("class","text-right");
+	iPers.appendChild(document.createTextNode(pers));
+    let iSar = document.createElement("td");
+	iSar.setAttribute("class","text-right");
+	iSar.appendChild(document.createTextNode(sar));
+    let iCharge = document.createElement("td");
+	iCharge.setAttribute("class","text-right");
+	iCharge.appendChild(document.createTextNode(chargeWithCommas));
+    let iSubTotal = document.createElement("td");
+	iSubTotal.setAttribute("class","text-right");
+	iSubTotal.appendChild(document.createTextNode(subTotalWithCommas));
+    let iDiscount = document.createElement("td");
+	iDiscount.setAttribute("class","text-right");
+	iDiscount.appendChild(document.createTextNode(netIncome));
+    let iTotal = document.createElement("td");
+	iTotal.setAttribute("class","text-right");
+	iTotal.appendChild(document.createTextNode(totalWithCommas));
 
-	tr.appendChild(iType)
-	tr.appendChild(iTitle)
-	tr.appendChild(iHour)
-	tr.appendChild(iPers)
-	tr.appendChild(iSar)
-	tr.appendChild(iCharge)
-	tr.appendChild(iSubTotal)
-	tr.appendChild(iDiscount)
-	tr.appendChild(iTotal)
+	tr.appendChild(iType);
+	tr.appendChild(iTitle);
+	tr.appendChild(iHour);
+	tr.appendChild(iPers);
+	tr.appendChild(iSar);
+	tr.appendChild(iCharge);
+	tr.appendChild(iSubTotal);
+	tr.appendChild(iDiscount);
+	tr.appendChild(iTotal);
     tr.onclick = removeItem;
     tbody.appendChild(tr);
-	initItem()
-	updateTotal()
+	initItem();
+	updateTotal();
 }
 
 function removeItem(e) {
@@ -123,7 +125,7 @@ function removeItem(e) {
 	updateTotal();
 }
 
-// 클라이언트가 입급하기 편하도록 만원단위로 바꾼다.
+// 클라이언트가 입급하기 편하도록 만원단위로 절삭한다.
 function floor(n) {
 	return Math.floor(n*0.0001) * 10000
 }
