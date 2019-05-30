@@ -1,7 +1,8 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css"></link>
 	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -12,13 +13,15 @@
    </head>
    <body>
    <h1 class="pt-5">ESTIMATE<img src="http://lazypic.org/images/doc_cal.svg" width="60" id="logo"></h1>
-   <div class="comment">
-   <div id="docnum"></div>
-   <div id="writeDate"></div>
+	<div class="comment">
+		<div id="docnum"></div>
+		<div id="writeDate"></div>
    </div>
    <h2 id="doctitle">Title:</h2>
-   <input id="doctitleInput" size="40" placeholder="Estimate Title" class="m-1">
+   <input id="doctitleInput" size="40" placeholder="Estimate Title" class="mb-2" style="width: 100%;">
+   
    <div>
+
    <table width="100%">
    <thead>
    <tr>
@@ -28,25 +31,27 @@
    </tr>
    <tbody>
    <tr>
-	   <td>Name : <input placeholder="Service Provider Name"></td>
+	   <td>Name : <input placeholder="Service Provider Name" class="input-100"></td>
 	   <td></td>
-	   <td>Name : <input placeholder="Customer Name">귀중</td>
+	   <td>Name : <input placeholder="Customer Name" class="input-100"></td>
 	</tr>
    <tr>
-	<td>Phone : <input placeholder="+82 010 0000 0000"></td>
+	<td>Phone : <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
 	   <td></td>
-	   <td>Phone : <input placeholder="+82 010 0000 0000"></td>
+	   <td>Phone : <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
 	</tr>
    <tr>
-   <td>E-mail : <input placeholder="E-mail"></td></td>
+   <td>E-mail : <input type="email" placeholder="E-mail" class="input-100"></td></td>
    <td></td>
-   <td>E-mail : <input placeholder="E-mail"></td></tr>
+   <td>E-mail : <input type="email" placeholder="E-mail" class="input-100"></td></tr>
    <tr>
-   <td>Address : <input placeholder="Address" size="47"></td>
+   <td>Address : <input type="text" placeholder="Address" class="input-100"></td>
    <td></td>
-   <td>Address : <input placeholder="Address" size="47"></td></tr>
+   <td>Address : <input type="text" placeholder="Address" class="input-100"></td></tr>
    </tbody>
    </table>
+
+
    </div>
    <div>
 	  <h4 class="pt-3">SUMMARY</h4>
@@ -80,20 +85,35 @@
 	<div>
 	<h5 class="pt-5">DETAIL FOR CONSOLIDATED BILL</h5>
      <!--item input-->
-	<div id="itemInput" class="p-3 row input-group">
-	 <select id="type" name="type" class="form-control col-2 btn btn-sm">
-	 	<option value="Service">Service</option>
-	 	<option value="Research">Research</option>
-	 	<option value="Seminar">Seminar</option>
-	 	<option value="Consulting">Consulting</option>
-		<option value="Software">Software</option>
-		<option value="Artswork">Artswork</option>
-	 </select>
-      <input id="title" placeholder="title" class="col-5">
-      <input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour" class="col-1">H
-      <input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers" class="col-1">Pers
-      <input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="col-2">
-	  <button id="add" type="button" class="btn btn-dark btn-sm col-1">ADD</button>
+	<div id="itemInput" class="form-group row">
+		<div class="col-lg-2 col-md-12">
+			<select id="type" name="type" class="form-control btn btn-sm input-100">
+				<option value="Service">Service</option>
+				<option value="Research">Research</option>
+				<option value="Seminar">Seminar</option>
+				<option value="Consulting">Consulting</option>
+				<option value="Software">Software</option>
+				<option value="Artswork">Artswork</option>
+			</select>
+		</div>
+		<div class="col-lg-3 col-md-12">
+			<input id="title" placeholder="Title" class="input-100">
+		</div>
+		
+		<div class="col-lg-1 col-md-6">
+			<input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour" class="input-100">
+		</div>
+		<label for="hour" class="col-lg-1">Hours</label>
+		<div class="col-lg-1">
+			<input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers" class="input-100">
+		</div>
+		<label for="pers" class="col-lg-1">Person</label>
+		<div class="col-lg-2">
+			<input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="input-100">
+		</div>
+		<div class="col-lg-1">
+			<button id="add" type="button" class="btn btn-dark btn-sm btn-block">Add</button>
+		</div>
 	</div>
 	  <!--list-->
 	  <table width="100%">
