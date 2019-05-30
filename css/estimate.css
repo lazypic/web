@@ -41,6 +41,10 @@ li {
 	font-size: 9pt;
 }
 
+#docnum,#writeDate {
+	font-size: 9pt;
+}
+
 a {
 	text-decoration: none;
 	color: #000000;
