@@ -144,12 +144,12 @@ function updateTotal() {
 		itemsTotal += doc.items[i]["total"];
 	}
 	floorItemsTotal = floor(itemsTotal);
-	document.getElementById("preTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal);
+	document.getElementById("preTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal) + "&nbsp;";
 	tax = floorItemsTotal * incomeTax;
-	document.getElementById("incomeTax").innerHTML = doc.unit + " " + numberWithCommas(tax);
+	document.getElementById("incomeTax").innerHTML = doc.unit + " " + numberWithCommas(tax) + "&nbsp;";
 	localTax = floorItemsTotal * localIncomeTax;
-	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax);
-	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax);
+	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax) + "&nbsp;";
+	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax) + "&nbsp;";
 	// DETAIL FOR CONSOLIDATED BILL 항목 업데이트
 	document.getElementById("itemsHour").innerHTML = itemsHour;
 	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge);
