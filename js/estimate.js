@@ -148,6 +148,7 @@ function updateTotal() {
 	localTax = floorItemsTotal * localIncomeTax;
 	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax);
 	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax);
+	// DETAIL FOR CONSOLIDATED BILL 항목 업데이트
 	document.getElementById("itemsHour").innerHTML = itemsHour;
 	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge);
 	document.getElementById("itemsSubTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsSubTotal);

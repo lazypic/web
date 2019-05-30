@@ -6,7 +6,8 @@
 	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-      <link rel="stylesheet" href="css/estimate.css" />
+	  <link rel="stylesheet" href="css/estimate.css" />
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
       <title>Estimate</title>
    </head>
    <body>
@@ -48,7 +49,7 @@
    </table>
    </div>
    <div>
-	  <h3>SUMMARY</h3>
+	  <h4 class="pt-3">SUMMARY</h4>
 	  <table width="100%">
 	  <tr>
 	  	<th width="60%">구 분</th>
@@ -77,10 +78,10 @@
 	  -->
 	</div>
 	<div>
-	<h3>DETAIL FOR CONSOLIDATED BILL</h3>
+	<h5 class="pt-5">DETAIL FOR CONSOLIDATED BILL</h5>
      <!--item input-->
-	<div id="itemInput">
-	 <select id="type" name="type">
+	<div id="itemInput" class="p-3 row">
+	 <select id="type" name="type" class="form-control col-2">
 	 	<option value="Service">Service</option>
 	 	<option value="Research">Research</option>
 	 	<option value="Seminar">Seminar</option>
@@ -88,25 +89,25 @@
 		<option value="Software">Software</option>
 		<option value="Artswork">Artswork</option>
 	 </select>
-      <input id="title" size="35" placeholder="title">
-      <input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour">H
-      <input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers">Pers
-      <input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge">
-	  <button id="add" type="button">ADD</button>
+      <input id="title" size="35" placeholder="title" class="col-4">
+      <input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour" class="col-1">H
+      <input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers" class="col-1">Pers
+      <input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="col-2">
+	  <button id="add" type="button" class="btn btn-dark btn-sm col-1">ADD</button>
 	</div>
 	  <!--list-->
 	  <table width="100%">
 	  <thead>
 		  <tr>
-			  <th width="80">Type</th>
+			  <th width="80" class="text-center">Type</th>
 			  <th>Title</th>
-			  <th width="40">Hour</th>
-			  <th width="40">Pers</th>
-			  <th width="40">SAR</th>
-			  <th width="90">Charge</th>
-			  <th width="90">SubTotal</th>
-			  <th width="40">NI</th>
-			  <th width="90">Total</th>
+			  <th width="40" class="text-right">Hour</th>
+			  <th width="40" class="text-right">Pers</th>
+			  <th width="40" class="text-right">SAR</th>
+			  <th width="90" class="text-right">Charge</th>
+			  <th width="90" class="text-right">SubTotal</th>
+			  <th width="40" class="text-right">NI</th>
+			  <th width="90" class="text-right">Total</th>
 		  </tr>
 	  </thead>
 	  <tbody id="list">
@@ -115,13 +116,13 @@
 		  <tr>
 			  <th></th>
 			  <th></th>
-			  <th id="itemsHour" align="right"></th>
+			  <th id="itemsHour" class="text-right"></th>
 			  <th></th>
 			  <th></th>
-			  <th id="itemsCharge" align="right"></th>
-			  <th id="itemsSubTotal" align="right"></th>
+			  <th id="itemsCharge" class="text-right"></th>
+			  <th id="itemsSubTotal" class="text-right"></th>
 			  <th></th>
-			  <th id="itemsTotal" align="right"></th>
+			  <th id="itemsTotal" class="text-right"></th>
 		  </tr>
 	  </tfoot>
 	  </table>
@@ -132,7 +133,7 @@
 	  </div>
 	  <h3>INFOMATION</h3>
 	  <ul>
-	  <li>Website : <a href="https://lazypic.org">https://lazypic.org</a></li>
+	  <li>Website : <a href="https://lazypic.org" class="text-dark">https://lazypic.org</a></li>
 	  <li>본 견적서의 유효기간은 작성일로부터 30일 입니다.</li>
     	<li>한 업무(TASK)에 최소 1시간 업무단위를 책정합니다.</li>
 	  <li>SAR(Scope of Application Rate) / 적용비율 기준</li>
@@ -143,10 +144,10 @@
 		</ul>
 	<li>인건비 산정근거
 	<ul>
-	<li>SW기술자 표준임금표(매년 8.31 갱신) <a href="https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033">https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033</a></li>
-	<li>원천징수세율 : <a href="https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811">https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811</a></li>
+	<li>SW기술자 표준임금표(매년 8.31 갱신) <a href="https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033" class="text-dark">https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=41033</a></li>
+	<li>원천징수세율 : <a href="https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811" class="text-dark">https://www.nts.go.kr/support/support_03.asp?cinfo_key=MINF4820100726150811</a></li>
 	<li>프리랜서 등 원천징수대상 일부 사업소득 : 3.3%</li>
-	<li>코드 작성에 사용된 업무시간 계산방법 : <a href="https://github.com/lazypic/git-hours">https://github.com/lazypic/git-hours</a></li>
+	<li>코드 작성에 사용된 업무시간 계산방법 : <a href="https://github.com/lazypic/git-hours" class="text-dark">https://github.com/lazypic/git-hours</a></li>
 	</ul>
 	</ul>
    <div>
