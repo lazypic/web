@@ -24,7 +24,7 @@ function numberWithCommas(n) {
 }
 
 function newTitle() {
-    var title = document.getElementById("doctitleInput").value;
+    let title = document.getElementById("doctitleInput").value;
 	if ( title == "" ) {
 		return
 	};
@@ -131,12 +131,12 @@ function floor(n) {
 }
 
 function updateTotal() {
-	var itemsHour = 0;
-	var itemsCharge = 0;
-	var itemsSubTotal = 0;
-	var itemsTotal = 0;
-	var tax = 0;
-	var localTax = 0;
+	let itemsHour = 0;
+	let itemsCharge = 0;
+	let itemsSubTotal = 0;
+	let itemsTotal = 0;
+	let tax = 0;
+	let localTax = 0;
 	for (i = 0; i < doc.items.length; i++) {
 		itemsHour += doc.items[i]["hour"];
 		itemsCharge += doc.items[i]["charge"];
@@ -158,40 +158,39 @@ function updateTotal() {
 }
 
 function inputForm() {
-	var inputTitleForm = document.getElementById('doctitleInput');
+	let inputTitleForm = document.getElementById('doctitleInput');
 	inputTitleForm.style.display='block';
-	var inputItemForm = document.getElementById('itemInput');
+	let inputItemForm = document.getElementById('itemInput');
 	inputItemForm.style.display='block';
-	var link = document.getElementById('link');
+	let link = document.getElementById('link');
 	link.style.display='block';
 }
 
 function printMode() {
-	var inputTitleForm = document.getElementById('doctitleInput');
+	let inputTitleForm = document.getElementById('doctitleInput');
 	inputTitleForm.style.display='none';
-	var inputItemForm = document.getElementById('itemInput');
+	let inputItemForm = document.getElementById('itemInput');
 	inputItemForm.style.display='none';
-	var link = document.getElementById('link');
+	let link = document.getElementById('link');
 	link.style.display='none';
-
 	window.print();
 }
 
 function writeDate() {
-	var date = new Date();
-	var y = date.getFullYear();
-	var m = date.getMonth() + 1;
-	var d = date.getDate();
+	let date = new Date();
+	let y = date.getFullYear();
+	let m = date.getMonth() + 1;
+	let d = date.getDate();
 	doc.writedate = `Created : ${y}. ${m}. ${d}`;
 	document.getElementById("writeDate").innerHTML = doc.writedate;
 }
 
 function docNum() {
-	var d = new Date();
-	var year = d.getFullYear();
-	var month = (d.getMonth() + 1).toString();
-	var day = d.getDate().toString();
-	var hour = d.getHours().toString();
+	let d = new Date();
+	let year = d.getFullYear();
+	let month = (d.getMonth() + 1).toString();
+	let day = d.getDate().toString();
+	let hour = d.getHours().toString();
 	if (month.length === 1) {
 		month = "0" + month;
 	}
