@@ -23,7 +23,7 @@ h3 {
 }
 
 .comment {
-	font-size: 8pt;
+	font-size: 9pt;
 	text-align: right;
 }
 
@@ -38,10 +38,6 @@ th,td {
 }
 
 li {
-	font-size: 9pt;
-}
-
-#docnum,#writeDate {
 	font-size: 9pt;
 }
 
