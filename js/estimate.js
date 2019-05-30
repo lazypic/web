@@ -1,5 +1,6 @@
 const netIncome = 1.1; // 순이익율
-const taxRate = 0.033; // 원천세율
+const incomeTax = 0.03; // 소득세
+const localIncomeTax = 0.003; // 지방소득세
 
 var doc = {
 	title:"",
@@ -132,6 +133,8 @@ function updateTotal() {
 	var itemsCharge = 0;
 	var itemsSubTotal = 0;
 	var itemsTotal = 0;
+	var tax = 0;
+	var localTax = 0;
 	for (i = 0; i < doc.items.length; i++) {
 		itemsHour += doc.items[i]["hour"];
 		itemsCharge += doc.items[i]["charge"];
@@ -139,15 +142,16 @@ function updateTotal() {
 		itemsTotal += doc.items[i]["total"];
 	}
 	floorItemsTotal = floor(itemsTotal);
-	document.getElementById("total").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal)
-	document.getElementById("withholdingTax").innerHTML = doc.unit + " " + numberWithCommas(Math.round(floorItemsTotal * taxRate))
-	document.getElementById("personal").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - Math.round(floorItemsTotal * taxRate))
-	document.getElementById("itemsHour").innerHTML = itemsHour
-	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge)
-	document.getElementById("itemsSubTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsSubTotal)
-	document.getElementById("itemsTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal)
-	// document.getElementById("vat").innerHTML = doc.unit + numberWithCommas(Math.round(total * 0.1))
-	// document.getElementById("company").innerHTML = doc.unit + numberWithCommas(total + Math.round(total * 0.1))
+	document.getElementById("preTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal);
+	tax = floorItemsTotal * incomeTax;
+	document.getElementById("incomeTax").innerHTML = doc.unit + " " + numberWithCommas(tax);
+	localTax = floorItemsTotal * localIncomeTax;
+	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax);
+	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax);
+	document.getElementById("itemsHour").innerHTML = itemsHour;
+	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge);
+	document.getElementById("itemsSubTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsSubTotal);
+	document.getElementById("itemsTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal);
 }
 
 function inputMode() {
