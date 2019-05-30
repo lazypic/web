@@ -1,6 +1,6 @@
 const netIncome = 1.1; // 순이익율
 const incomeTax = 0.03; // 소득세
-const localIncomeTax = 0.003; // 지방소득세
+const localIncomeTax = 0.1; // 지방소득세. 소득세의 10%
 
 var doc = {
 	title:"",
@@ -147,7 +147,7 @@ function updateTotal() {
 	document.getElementById("preTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal) + "&nbsp;";
 	tax = floorItemsTotal * incomeTax;
 	document.getElementById("incomeTax").innerHTML = doc.unit + " " + numberWithCommas(tax) + "&nbsp;";
-	localTax = floorItemsTotal * localIncomeTax;
+	localTax = tax * localIncomeTax;
 	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax) + "&nbsp;";
 	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax) + "&nbsp;";
 	// DETAIL FOR CONSOLIDATED BILL 항목 업데이트
