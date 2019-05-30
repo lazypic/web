@@ -9,6 +9,8 @@
 	  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 	  <link rel="stylesheet" href="css/estimate.css" />
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	  <!-- Custom style -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
       <title>Estimate</title>
    </head>
    <body>
@@ -86,7 +88,7 @@
 	<h5 class="pt-5">DETAIL FOR CONSOLIDATED BILL</h5>
      <!--item input-->
 	<div id="itemInput" class="form-group row">
-		<div class="col-lg-2 col-md-12">
+		<div class="col-lg-2 col-md-12 mt-1 mb-1">
 			<select id="type" name="type" class="form-control btn btn-sm input-100">
 				<option value="Service">Service</option>
 				<option value="Research">Research</option>
@@ -96,22 +98,22 @@
 				<option value="Artswork">Artswork</option>
 			</select>
 		</div>
-		<div class="col-lg-3">
+		<div class="col-lg-3 mt-1 mb-1">
 			<input id="title" placeholder="Title" class="input-100">
 		</div>
 		
-		<div class="col-lg-1">
+		<div class="col-lg-1 mt-1 mb-1">
 			<input id="hour" type="number" min="1" max="1000" value="1" placeholder="hour" class="input-100">
 		</div>
 		<label for="hour" class="col-lg-1">Hours</label>
-		<div class="col-lg-1">
+		<div class="col-lg-1 mt-1 mb-1">
 			<input id="pers" type="number" step="1" min="1" max="100000" value="4" placeholder="pers" class="input-100">
 		</div>
 		<label for="pers" class="col-lg-1">Person</label>
-		<div class="col-lg-2">
+		<div class="col-lg-2 mt-1 mb-1">
 			<input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="input-100">
 		</div>
-		<div class="col-lg-1">
+		<div class="col-lg-1 mt-1 mb-1">
 			<button id="add" type="button" class="btn btn-dark btn-sm btn-block">Add</button>
 		</div>
 	</div>
@@ -172,12 +174,23 @@
 	</ul>
    <div>
    <center>
-   <img src="https://lazypic.org/images/logo_v02.svg" onclick="inputMode();" width="100">
-   <div id="link">
-   <button class="btn btn-dark" onclick="printMode()">Print document</button><br>
-  	 <a href="https://github.com/lazypic/web">Github</a> / <a href="https://github.com/lazypic/web/issues">Issue</a><br>
-	 하단 Lazypic 로고를 클릭하면 입력모드로 돌아갑니다.
-
+   <a href="#" onclick="inputForm();return false;"><img src="https://lazypic.org/images/logo_v02.svg" width="100"></a>
+   <div id="link" class="row">
+		<div class="col-lg-12 mx-auto p-1">
+				Lazypic 로고를 클릭하면 다시 입력모드로 돌아갑니다.
+		</div>
+	   <div class="col-lg-4 mx-auto m-1">
+			<button class="btn btn-dark btn-block" onclick="printMode()"><i class="fas fa-print"></i> Print Mode</button>
+	   </div>
+	   
+	   <div class="col-lg-4 mx-auto m-1">
+			<a href="https://github.com/lazypic/web"><button class="btn btn-dark btn-block"><i class="fab fa-github"></i> Github</button></a>
+		</div>
+		<div class="col-lg-4 mx-auto m-1">
+			<a href="https://github.com/lazypic/web/issues"><button class="btn btn-dark btn-block"><i class="fas fa-bug"></i> Issues</button></a>
+		</div>
+		
+	</div>
    </div>
    </center>
    </div>

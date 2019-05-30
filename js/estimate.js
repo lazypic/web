@@ -157,7 +157,7 @@ function updateTotal() {
 	document.getElementById("itemsTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal);
 }
 
-function inputMode() {
+function inputForm() {
 	var inputTitleForm = document.getElementById('doctitleInput');
 	inputTitleForm.style.display='block';
 	var inputItemForm = document.getElementById('itemInput');
