@@ -86,12 +86,14 @@
 	 <!--item input-->
 	<div id="itemInput" class="form-group row">
 		<div class="col-lg-2 col-md-12 mt-1 mb-1">
-			<select id="type" name="type" class="form-control btn btn-sm btn-secondary">
+			<select id="type" name="type" class="form-control btn btn-sm btn-secondary" onchange="changeType()">
+				<option value="Software">Software</option>
 				<option value="Service">Service</option>
 				<option value="Research">Research</option>
 				<option value="Seminar">Seminar</option>
+				<option value="ShortSeminar">ShortSeminar</option>
 				<option value="Consulting">Consulting</option>
-				<option value="Software">Software</option>
+				<option value="WebDesign">WebDesign</option>
 				<option value="Artswork">Artswork</option>
 			</select>
 		</div>
@@ -108,7 +110,7 @@
 		</div>
 		
 		<div class="col-lg-2 mt-1 mb-1">
-			<input id="charge" type="number" step="1" min="0" max="100000000000" value="55457" placeholder="charge" class="input-100">
+			<input id="charge" type="number" step="1" min="0" max="100000000000" value="42838" placeholder="charge" class="input-100">
 		</div>
 		<div class="col-lg-1 mt-1 mb-1">
 			<button id="add" type="button" class="btn btn-dark btn-sm btn-block">Add</button>

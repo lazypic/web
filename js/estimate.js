@@ -204,6 +204,40 @@ function docNum() {
 	document.getElementById("docnum").innerHTML = doc.num;
 }
 
+function changeType() {
+	if (document.getElementById("type").value === "Software") {
+		document.getElementById("charge").value = 42838;
+		return;
+	}
+	if (document.getElementById("type").value === "Service") {
+		document.getElementById("charge").value = 60000;
+		return;
+	}
+	if (document.getElementById("type").value === "Research") {
+		document.getElementById("charge").value = 55457;
+		return;
+	}
+	if (document.getElementById("type").value === "Consulting") {
+		document.getElementById("charge").value = 55457;
+		return;
+	}
+	if (document.getElementById("type").value === "Seminar") {
+		document.getElementById("charge").value = 60000;
+		return;
+	}
+	if (document.getElementById("type").value === "ShortSeminar") {
+		document.getElementById("charge").value = 300000;
+		return;
+	}
+	if (document.getElementById("type").value === "WebDesign") {
+		document.getElementById("charge").value = 26101;
+		return;
+	}
+	if (document.getElementById("type").value === "Artswork") {
+		document.getElementById("charge").value = 40000;
+		return;
+	}
+}
 // enter를 치거나 add버튼을 클릭한다면 아이템이 보여야 한다.
 document.body.onkeyup = function(e) {
     if (e.keyCode == 13) {
