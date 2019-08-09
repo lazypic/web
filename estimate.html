@@ -22,64 +22,63 @@
    <h2 id="doctitle">Title:</h2>
    <input id="doctitleInput" size="40" placeholder="Estimate Title" class="mb-2" style="width: 100%;">
    
-   <div>
+	<div>
 
-   <table width="100%">
-   <thead>
-   <tr>
-   <th width="50%" class="text-left">&nbsp;Service Provider</td>
-   <th></td>
-   <th width="50%" class="text-left">&nbsp;Customer</td>
-   </tr>
-   <tbody>
-   <tr>
-	   <td>&nbsp;Name: <input placeholder="Service Provider Name" class="input-100"></td>
-	   <td></td>
-	   <td>&nbsp;Name: <input placeholder="Customer Name" class="input-100"></td>
-	</tr>
-   <tr>
-	<td>&nbsp;Phone: <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
-	   <td></td>
-	   <td>&nbsp;Phone: <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
-	</tr>
-   <tr>
-   <td>&nbsp;E-mail: <input type="email" placeholder="E-mail" class="input-100"></td></td>
-   <td></td>
-   <td>&nbsp;E-mail: <input type="email" placeholder="E-mail" class="input-100"></td></tr>
-   <tr>
-   <td>&nbsp;Address: <input type="text" placeholder="Address" class="input-100"></td>
-   <td></td>
-   <td>&nbsp;Address: <input type="text" placeholder="Address" class="input-100"></td></tr>
-   </tbody>
-   </table>
-
-
-   </div>
-   <div>
+		<table width="100%">
+		<thead>
+		<tr>
+			<th width="50%" class="text-left h6 pl-2 pt-1 pb-1">Service Provider</td>
+			<th></td>
+			<th width="50%" class="text-left h6 pl-2 pt-1 pb-1">Customer</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td class="h6 pl-2 pt-1 pb-1">
+			Name: <input placeholder="Service Provider Name" class="input-100"></td>
+		<td></td>
+		<td class="h6 pl-2 pt-1 pb-1">Name: <input placeholder="Customer Name" class="input-100"></td>
+		</tr>
+		<tr>
+			<td class="h6 pl-2 pt-1 pb-1">Phone: <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
+			<td></td>
+			<td class="h6 pl-2 pt-1 pb-1">Phone: <input type="tel" placeholder="+82 010 0000 0000" class="input-100"></td>
+		</tr>
+		<tr>
+			<td class="h6 pl-2 pt-1 pb-1">E-mail: <input type="email" placeholder="E-mail" class="input-100"></td></td>
+			<td></td>
+			<td class="h6 pl-2 pt-1 pb-1">E-mail: <input type="email" placeholder="E-mail" class="input-100"></td></tr>
+		<tr>
+			<td class="h6 pl-2 pt-1 pb-1">Address: <input type="text" placeholder="Address" class="input-100"></td>
+			<td></td>
+			<td class="h6 pl-2 pt-1 pb-1">Address: <input type="text" placeholder="Address" class="input-100"></td></tr>
+		</tbody>
+		</table>
+	</div>
+	<div>
 	  <h4 class="pt-3">SUMMARY</h4>
 	  <table width="100%">
 	  <tr>
-	  	<th width="60%">&nbsp;&nbsp;구 분</th>
-		<th width="40%" class="text-right">금 액&nbsp;&nbsp;</th>
+	  	<th class="h6 pl-3 pt-1 pb-1" width="60%">구 분</th>
+		<th width="40%" class="text-right h6 pr-4 pt-1 pb-1">금 액</th>
 	  </tr>
 	  <tr>
-	  	<td>&nbsp;&nbsp;지급총액 (세전)</td>
-	  	<td id="preTax" class="text-right"></td>
+	  	<td class="h6 pl-3 pt-1 pb-1">지급총액 (세 전)</td>
+	  	<td id="preTax" class="text-right h6 pr-3 pt-1 pb-1"></td>
 	  </tr>
 	  <tr>
-	  	<td>&nbsp;&nbsp;소득세 (지급총액의 3%)</td>
-	  	<td id="incomeTax" class="text-right"></td>
+	  	<td class="h6 pl-3 pt-1 pb-1">소득세 (지급총액의 3%)</td>
+	  	<td id="incomeTax" class="text-right h6 pr-3 pt-1 pb-1"></td>
 	  </tr>
 	  <tr>
-		<td>&nbsp;&nbsp;지방소득세 (소득세의 10%)</td>
-		<td id="localIncomeTax" class="text-right"></td>
+		<td class="h6 pl-3 pt-1 pb-1">지방소득세 (소득세의 10%)</td>
+		<td id="localIncomeTax" class="text-right h6 pr-3 pt-1 pb-1"></td>
 	  </tr>
 	  <tr>
-	  	<td>&nbsp;&nbsp;계 (세후)</td>
-	  	<td id="afterTax" class="text-right"></td>
+	  	<td class="h6 pl-3 pt-1 pb-1">계 (세 후)</td>
+	  	<td id="afterTax" class="text-right h6 pr-3 pt-1 pb-1"></td>
 	  </tr>
 	  </table>
-	  
 	</div>
 	<div>
 	<h5 class="pt-5">DETAIL FOR CONSOLIDATED BILL</h5>
@@ -95,6 +94,7 @@
 				<option value="Consulting">Consulting</option>
 				<option value="WebDesign">WebDesign</option>
 				<option value="Artswork">Artswork</option>
+				<option value="Turnkey">Turnkey</option>
 			</select>
 		</div>
 		<div class="col-lg-3 mt-1 mb-1">

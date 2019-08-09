@@ -76,7 +76,11 @@ function newItem() {
 	iTitle.appendChild(document.createTextNode(title));
     let iHour = document.createElement("td");
 	iHour.setAttribute("class","text-right");
-	iHour.appendChild(document.createTextNode(hour));
+	if (hour > 1) {
+		iHour.appendChild(document.createTextNode(hour));
+	} else {
+		iHour.appendChild(document.createTextNode(""));
+	}
     let iPers = document.createElement("td");
 	iPers.setAttribute("class","text-right");
 	iPers.appendChild(document.createTextNode(pers));
@@ -151,7 +155,9 @@ function updateTotal() {
 	document.getElementById("localIncomeTax").innerHTML = doc.unit + " " + numberWithCommas(localTax) + "&nbsp;";
 	document.getElementById("afterTax").innerHTML = doc.unit + " " + numberWithCommas(floorItemsTotal - tax - localTax) + "&nbsp;";
 	// DETAIL FOR CONSOLIDATED BILL 항목 업데이트
-	document.getElementById("itemsHour").innerHTML = itemsHour;
+	if (itemsHour > 1) {
+		document.getElementById("itemsHour").innerHTML = itemsHour;
+	};
 	document.getElementById("itemsCharge").innerHTML = doc.unit + " " + numberWithCommas(itemsCharge);
 	document.getElementById("itemsSubTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsSubTotal);
 	document.getElementById("itemsTotal").innerHTML = doc.unit + " " + numberWithCommas(itemsTotal);
@@ -235,6 +241,10 @@ function changeType() {
 	}
 	if (document.getElementById("type").value === "Artswork") {
 		document.getElementById("charge").value = 40000;
+		return;
+	}
+	if (document.getElementById("type").value === "Turnkey") {
+		document.getElementById("charge").value = 4000000;
 		return;
 	}
 }
