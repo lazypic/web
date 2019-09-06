@@ -1,9 +1,9 @@
-var korean = document.getElementById('kor_click'),
-    english = document.getElementById('eng_click'),
-    korean_txt = document.querySelectorAll('.kor'),
-    english_txt = document.querySelectorAll('.eng'),
-    nb_korean = korean_txt.length,
-    nb_english = english_txt.length;
+let korean = document.getElementById('kor_click');
+let english = document.getElementById('eng_click');
+let korean_txt = document.querySelectorAll('.kor');
+let english_txt = document.querySelectorAll('.eng');
+let nb_korean = korean_txt.length;
+let nb_english = english_txt.length;
 
 korean.addEventListener('click', function() {
     langue(korean,english);
