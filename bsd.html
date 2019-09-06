@@ -20,13 +20,17 @@
     <section class="p-5">
     <div class="pt-5 mx-auto text-center">
         <img src="images/logo_v03.svg" width="160" height="160">
-        <div class="font-weight-light h6 pt-5">
+        <div class="font-weight-light h6 pt-5 kor">
           <p>Lazypic은 대부분 소프트웨어 개발에 BSD 라이선스 정책을 적용하여 개발합니다.</p>
           <p>제작된 소프트웨어는 <a href="https://github.com/lazypic">Github</a>를 통해 오픈소스로 공유합니다.</p>
-          <p>
-            <span class="btn btn-dark btn-sm">한글</span>
-            <span class="btn btn-dark btn-sm">English</span>
-          </p>
+        </div>
+        <div class="font-weight-light h6 pt-5 eng">
+          <p>Lazypic is mostly developed under the BSD license policy for software development.</p>
+          <p>The created software is shared open source through <a href="https://github.com/lazypic">Github</a>.</p>
+        </div>
+        <div class="font-weight-light h6 pt-5">
+          <span class="btn btn-dark btn-sm"  id="eng_click">English</span>
+          <span class="btn btn-dark btn-sm"  id="kor_click">한글</span>
         </div>
     </div>
     </section>
@@ -77,8 +81,8 @@
         <p class="h6 font-weight-light">
           개발자는 초기부터 많은 곳에서 소프트웨어를 적용할 수 있다고 생각하게 됩니다.
           때론 개발된 소프트웨어가 평생동안 사용하게 될 수 있습니다. 이러한 특징 때문에 기업 입장에서는 양질의 소프트웨어를 얻을 수 있는 확률이 높습니다.
-          또한 회사에서 진행하는 프로젝트를 오픈소스로 진행하면 어떤 프로젝트를 하고 있는지 외부에 노출할 수 있고, 관련 개발자를 구하기 쉽습니다.
-          다른 곳에서 만들어진 BSD 라이선스 소프트웨어도 자유롭게 도입 및 활용이 가능합니다. 전체적인 개발기간을 줄일 수 있습니다.
+          또한 회사에서 진행하는 프로젝트를 오픈소스로 진행하면 관련 개발자를 구하기 쉽습니다.
+          다른 곳에서 만들어진 BSD 라이선스 소프트웨어도 자유롭게 도입 및 활용이 가능하기 때문에 전체 개발기간이 줄어듭니다.
         </p>
       </div>
     </section>
@@ -273,5 +277,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
         text: 'Thumbnail'
       });
     </script>
+    <script src="js/translate.js"></script>
   </body>
 </html>
