@@ -20,14 +20,20 @@
     <section class="p-5">
     <div class="pt-5 mx-auto text-center">
         <img src="images/logo_v03.svg" width="160" height="160">
-        <div class="font-weight-light h6 pt-5">
-          <p>Lazypic은 콘텐츠 제작 파이프라인을 협업하며 개발합니다.</p>
-          <p>콘텐츠를 기획하며 콘텐츠 제작 노하우와 파이프라인을 <a href="https://github.com/lazypic">Github</a>에 오픈소스로 공유합니다.</p>
-          <p>1인 콘텐츠 개발자, 프리랜서그룹, 기업, 비영리단체, 학교등과 기술 협업을 진행하고 있습니다.</p>
-          <p>
-            <span class="btn btn-dark btn-sm">English</span>
-            <span class="btn btn-dark btn-sm">한글</span>
-          </p>
+        <div class="font-weight-light h6 pt-5 kor">
+          Lazypic은 콘텐츠 제작 파이프라인을 협업하며 개발합니다.<br>
+          콘텐츠를 기획하며 콘텐츠 제작 노하우와 파이프라인을 <a href="https://github.com/lazypic">Github</a>에 오픈소스로 공유합니다.<br>
+          1인 콘텐츠 개발자, 프리랜서그룹, 기업, 비영리단체, 학교등과 기술 협업을 진행하고 있습니다.
+        </div>
+        <div class="font-weight-light h6 pt-5 eng">
+          Lazypic collaborates and develops content creation pipelines.<br>
+          Plan your content and share your content creation know-how and pipeline as open source on <a href="https://github.com/lazypic">Github</a>.<br>
+          We are working on technical collaboration with one-man content developers,<br>
+          freelance groups, companies, non-profit organizations, and schools.
+        </div>
+        <div>
+            <span class="btn btn-dark btn-sm" id="kor_click">한글</span>
+            <span class="btn btn-dark btn-sm" id="eng_click">English</span>
         </div>
     </div>
     </section>
@@ -134,7 +140,7 @@
       <div class="container text-center">
         <h3 class="mb-4">Development</h3>
         <p class="h6 font-weight-light">콘텐츠 제작에 필요한 Windows, Linux, macOS 용 시스템 명령어를 제작합니다.</p>
-        <p class="h6 font-weight-light">회사에서 필요한 프로그램 API 작성합니다.(웹어플리케이션, Go, Python을 주로 사용합니다.)</p>
+        <p class="h6 font-weight-light">회사에서 필요한 프로그램 API 작성합니다.(RestAPI, Go, Python을 주 언어로 사용합니다.)</p>
         <p class="h6 font-weight-light">단순 반복적인 작업에 대한 자동화 스크립트를 제작합니다.</p>
         <p class="h6 font-weight-light">Blender Python Plugin 을 개발합니다.</p>
       </div>
@@ -153,7 +159,8 @@
     <section class="p-5 bg-white">
       <div class="container text-center">
         <h3 class="mb-4">Testing</h3>
-        <p class="h6 font-weight-light">미래에 적용될 오픈소스 솔루션 빌드 테스트를 진행합니다.</p>
+        <p class="h6 font-weight-light kor">미래에 적용될 오픈소스 솔루션 빌드 테스트를 진행합니다.</p>
+        <p class="h6 font-weight-light eng">Test build open source solutions for the future.</p>
       </div>
     </section>
 
@@ -243,5 +250,6 @@
         text: 'Thumbnail'
       });
     </script>
+    <script src="js/translate.js"></script>
   </body>
 </html>
