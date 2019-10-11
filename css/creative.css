@@ -221,3 +221,11 @@ img::-moz-selection {
 .portfolio-box:focus {
   outline: none;
 }
+
+.text-emeraldgreen {
+  color: #00b3b0;
+}
+
+.text-emeraldgreen:hover {
+  color: #00b3b0;
+}
