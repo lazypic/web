@@ -34,7 +34,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#development">Development</a>
+          <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#development">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#contact">Contact</a>
@@ -42,6 +42,7 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="https://lazypic.org/#donation">Donation</a>
         </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/login?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org">SignIn</a>
         </li>
@@ -51,6 +52,7 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="https://lazypic.auth.ap-northeast-2.amazoncognito.com/logout?client_id=4q2hukd8jle8bj8uoaihb52och&logout_uri=https://lazypic.org">SignOut</a>
         </li>
+        -->
       </ul>
     </div>
   </div>
@@ -62,10 +64,18 @@
     <div class="p-5">
       <img src="images/logo_v03.svg">
     </div>
-    <div class="h6 font-weight-light pb-5">
+    <div class="h6 font-weight-light pb-5 eng">
       If anyone in the world has an idea for content creation,<br>
       Lazypic helps you build a production pipeline.
-	</div>
+    </div>
+    <div class="h6 font-weight-light pb-5 kor">
+      콘텐츠 제작에 아이디어가 있다면,<br>
+      Lazypic이 당신의 프로덕션 파이프라인 구축을 도와드립니다.
+    </div>
+    <div class="p-5">
+        <span class="btn btn-sm btn-outline-dark m-2" id="eng_click">Eng</span>
+        <span class="btn btn-sm btn-outline-dark m-2" id="kor_click">Kor</span>
+    </div>
 </div>
 
 <div class="p-3 bg-light text-center">
@@ -73,9 +83,13 @@
   <p>
     <img src="https://lh3.googleusercontent.com/M9877bg-PbxNkVysaGYnh9W_bYi4Q6Y-gpnSxn20zg0Ul7xKbsKRDUObndrLnzPtDi21KpzGTcu2pUuIzHTxSGR-imMcjwDLXXNPqCVcjFtwf1zyy3LGSMrVKEcyfbDV0ivAJBxyT7FeOSYmh0c37zFa3CngI235whZUBl8nybanRuPy-r5RGcDvYefZHWV_8vMyEgKT_zxVaomZxYuACyAyQGUoSdnJhdhvlEAhd6nbQJIOmp4IK225sv40aK-3lcQ4lqwh-5UGwfh1yEQJsanz8NHSgTkHpLhObOg7cM8jf0VWW9sU2_a91CQa72pUhFGDVokApZa9xBlfERKhZMS2hj0W3dh6daR865p-OBpN-4nWPil6Diz-L6_VQ2Wfl6PI7QmjwCTXA_pqi6VWqGsHxy8ZP8nzUDz7fdDFa8OYqe57CGjUs6neScbMVRAyCt9sHOV_Aj9zLMSHEfConehHp0GFFPrbGMVQ_En8n4L1fCNO8psVmo0-i09HKWXzscOzBVsbrr4EDDjYKaz8PHOCS95KoPOS6RHXhU3Cpp3gKVb91VkZUXdV4ZPFzHX9yyPUKheOZ6RpLkD3KN68w4SzcvU2dv2JQNR1DCzKQrgZ_-QQswk1Q6QYVgSQPJHbetWOqaUtTDrkN-93QsP4zJUnnDZdvnB46qGYzMuVNyQOT9l8XfwsuL8zLg=w536-h614-no" width="300">
   </p>
-    <p class="h6 font-weight-light">
+    <p class="h6 font-weight-light eng">
       We are preparing the <a href="https://www.blender.org" class="text-emeraldgreen">Blender</a> pipeline for our own content creation.<br>
       We are also slowly creating content concepts using open source tools like <a href="https://www.gimp.org/" class="text-emeraldgreen">Gimp</a> and <a href="https://krita.org/en/" class="text-emeraldgreen">Krita</a>.
+    </p>
+    <p class="h6 font-weight-light kor">
+      Lazypic은 <a href="https://www.blender.org" class="text-emeraldgreen">Blender</a> 를 활용한 콘텐츠 제작 파이프라인을 준비하고 있습니다.<br>
+      또한 오픈소스툴 <a href="https://www.gimp.org/" class="text-emeraldgreen">Gimp</a> 와 <a href="https://krita.org/en/" class="text-emeraldgreen">Krita</a> 툴을 이용해서 컨셉을 진행합니다.
     </p>
     <a href="circle.html" class="btn btn-sm btn-outline-dark m-3">Project Page</a>
 </div>
@@ -84,10 +98,15 @@
 <div class="p-3 pb-5 bg-white text-center">
   <h3 class="pt-5"><a name="development"></a></h3>
 <p><img src="images/openpipelineio_v02.svg"></p>
-<p class="h6 font-weight-light">
+<p class="h6 font-weight-light eng">
+  Lazypic content development environment R&D is open source.<br>
+  Collaborate with personal content creators, schools, nonprofits and businesses with the accumulated knowledge and code.<br>
+  Source code is shared on <a href="https://github.com/lazypic" class="text-emeraldgreen">Github</a>. Software distribution uses <a href="https://openpipeline.io" class="text-emeraldgreen">OpenPipeline.IO</a>.
+</p>
+<p class="h6 font-weight-light kor">
   Lazypic 콘텐츠 개발환경 R&D는 오픈소스로 진행합니다.<br>
   축적된 지식과 코드로 개인 콘텐츠 제작자, 학교, 비영리단체, 기업등과 협업합니다.<br>
-  콘텐츠 파이프라인은 소스코드는 <a href="https://github.com/lazypic" class="text-emeraldgreen">Github</a>에 공유합니다.<br>
+  소스코드는 <a href="https://github.com/lazypic" class="text-emeraldgreen">Github</a>에 공유합니다.<br>
   소프트웨어는 <a href="https://openpipeline.io" class="text-emeraldgreen">OpenPipeline.IO</a>로 배포합니다.
 </p>
 </div>
@@ -95,7 +114,11 @@
 
 <div class="p-3 bg-light text-center">
   <h3 class="p-2">CSI</h3>
-  <p class="h6 font-weight-light">
+  <p class="h6 font-weight-light eng">
+    Web-based content project management pipeline tool.<br>
+    Work in collaboration with <a href="http://www.digitalidea.co.kr" class="text-emeraldgreen">Digitalidea</a>.
+  </p>
+  <p class="h6 font-weight-light kor">
     웹 기반 콘텐츠 프로젝트 매니징 파이프라인 툴입니다.<br>
     <a href="http://www.digitalidea.co.kr" class="text-emeraldgreen">Digitalidea</a>와 협업하며 Lazypic에서 개발을 진행합니다.
   </p>
@@ -105,9 +128,16 @@
 
 
 <div class="p-3 bg-grey text-center">
-  <h3 class="p-2">Git hours</h3>
-
-<p class="h6 font-weight-light">
+  <h3 class="p-2">git hours</h3>
+<p class="h6 font-weight-light eng">
+  Git hours is a tool that helps you work from home or freelance working time.<br>
+  You can check the working hours from online.<br>
+  Lazypic pursues a full time telework model and collaborates with freelancers.<br>
+  Calculate your development time with Log information in Git.<br>
+  For more information on how to use "git hours", please visit <a href="https://github.com/lazypic/git-hours" class="text-emeraldgreen">Github</a>.<br>
+  The calculated time is reflected in the <a href="https://lazypic.org/estimate.html" class="text-emeraldgreen">Lazypic Estimate System</a>.
+</p>
+<p class="h6 font-weight-light kor">
   재택근무, 프리랜서를 위한 툴입니다.<br>
   외부에서 자유롭게 오픈소스 개발을 하더라도 업무시간을 체크할 수 있습니다.<br>
   Lazypic은 풀타임 재택근무 모델을 지향하고 프리랜서와 협업하고 있습니다.<br>
@@ -123,7 +153,11 @@
 
 <div class="p-5 bg-white text-center">
     <h3 class="p-2">Start-up Support</h3>
-    <p class="h6 font-weight-light">
+    <p class="h6 font-weight-light eng">
+      You can reduce the fixed costs of startup group mail by linking <a href="https://mail.google.com" class="text-emeraldgreen">Gmail</a> and <a href="https://www.mailgun.com" class="text-emeraldgreen">Mailgun</a>.<br>
+      Try running small and medium sized mail for $ 1.65 per month.
+    </p>
+    <p class="h6 font-weight-light kor">
       <a href="https://mail.google.com" class="text-emeraldgreen">Gmail</a>과 <a href="https://www.mailgun.com" class="text-emeraldgreen">Mailgun</a>을 연동하여, 스타트업 그룹메일 고정비용을 줄일 수 있습니다.<br>
       중소규모 메일을 월 $1.65 으로 운용해보세요.
     </p>
@@ -131,20 +165,28 @@
 
 <div class="p-3 bg-grey text-center">
   <h3 class="p-2">Website & Webapp</h3>
-  <p class="h6 font-weight-light">
-    중소규모의 홈페이지, 업무 파이프라인을 위한 웹 어플리케이션 제작
+  <p class="h6 font-weight-light eng">
+    We can create web applications for small and medium sized business app application.<br>
+    Leverage AWS, HTML5, CSS3, JavaScript, Ajax, jQuery, node.JS, Bootstrap4.
   </p>
-  <p class="h6 font-weight-light">AWS, HTML5, CSS3, JavaScript, Ajax, jQuery, node.JS, Bootstrap4 를 활용합니다.</p>
+  <p class="h6 font-weight-light kor">
+    중소규모의 홈페이지, 업무 파이프라인을 위한 웹 어플리케이션 제작<br>
+    AWS, HTML5, CSS3, JavaScript, Ajax, jQuery, node.JS, Bootstrap4 를 활용합니다.
+  </p>
   <p class="h6 font-weight-light">case1: <a href="https://75mm.studio" class="text-emeraldgreen">75mm Studio Homepage</a></p>
   <p class="h6 font-weight-light">case2: <a href="https://75mm.studio/estimate.html" class="text-emeraldgreen">75mm Studio Estimate System</a></p>
 </div>
 
 <div class="p-4 bg-white text-center">
   <h3 class="p-2">Back-end Cmd Tools</h3>
-
-  <p class="h6 font-weight-light"></p>
-  <p class="h6 font-weight-light">Cloud와 터미널이 바로 연계되는 Back-end Commandline Tool 제작이 가능합니다.</p>
-  <p class="h6 font-weight-light">Aws SDK와 Go 를 활용하여 의존성이 적은 터미널 명령어를 제작, 클라우드를 활용한 파이프라인을 구축할 수 있습니다.</p>
+  <p class="h6 font-weight-light eng">
+    We can create a Commandline Tool that connects the terminal and the cloud service.<br>
+    You can build pipelines by less dependent commandline tools with the Aws SDK and Go.
+  </p>
+  <p class="h6 font-weight-light kor">
+    Cloud와 터미널이 바로 연계되는 Back-end Commandline Tool 제작이 가능합니다.<br>
+    Aws SDK와 Go 를 활용하여 의존성이 적은 터미널 명령어를 제작, 클라우드를 활용한 파이프라인을 구축할 수 있습니다.
+  </p>
   <p class="h6 font-weight-light mt-4 m-3">
     <a href="https://github.com/lazypic/cashflow" class="btn btn-outline-dark btn-sm mb-2">Cashflow</a>
     <a href="https://github.com/lazypic/assetflow" class="btn btn-outline-dark btn-sm mb-2">Assetflow</a>
@@ -157,7 +199,12 @@
 <div class="p-3 bg-light text-center">
     <h3 class="p-2 pt-3">Education</h3>
     <p class="h6 font-weight-light">Technical Director Course</p>
-    <p class="h6 font-weight-light">
+    <p class="h6 font-weight-light eng">
+      Pilot lectures at <a href="http://www.foundrykorea.com" class="text-emeraldgreen">The Foundry Korea</a>, <a href="http://www.dongguk.edu/mbs/kr/index.jsp" class="text-emeraldgreen">Dongguk University</a> and <a href="https://www.mofacacademy.com" class="text-emeraldgreen">Mopac Academy</a>.<br>
+      This course covers the basics of NukeAPI, an open source command used for content creation in Linux.<br>
+      <a class="btn btn-outline-dark btn-sm mt-4 m-3" href="https://github.com/cgiseminar/curriculum">Github</a>
+    </p>
+    <p class="h6 font-weight-light kor">
       <a href="http://www.foundrykorea.com" class="text-emeraldgreen">The Foundry Korea</a> + <a href="http://www.dongguk.edu/mbs/kr/index.jsp" class="text-emeraldgreen">동국대학교</a> + <a href="https://www.mofacacademy.com" class="text-emeraldgreen">모팩아카데미</a>에서 진행한 파일럿 강의<br>
       리눅스 환경에서 콘텐츠 제작시 사용할 수 있는 유용한 오픈소스 명령어, NukeAPI 기초를 다룹니다.<br>
       <a class="btn btn-outline-dark btn-sm mt-4 m-3" href="https://github.com/cgiseminar/curriculum">Github</a>
@@ -166,9 +213,13 @@
 
 <div class="p-4 bg-white text-center">
     <h3 class="p-3">Developments Capabilities</h3>
-    <p class="h6 font-weight-light">
-      Lazypic과 협업할 수 있는 모델에 대한 설명입니다.<br>
-      Lazypic의 개발 방향, 기업 간 협업, 커뮤니케이션 도구를 살펴볼 수 있는 페이지입니다.
+    <p class="h6 font-weight-light eng">
+      This article is about the Lazypic Collaboration Model.<br>
+      See how Lazypic develops, collaborates, and communicates with you.
+    </p>
+    <p class="h6 font-weight-light kor">
+      Lazypic 협업모델에 대한 문서입니다.<br>
+      Lazypic의 개발 방법, 협업, 커뮤니케이션 도구를 살펴볼 수 있습니다.
     </p>
     <a class="btn btn-sm btn-outline-dark m-3" href="capability.html">Read</a>
 </div>
@@ -180,9 +231,13 @@
         <a name="contact">
           <h3 class="p-3">Contact</h3>
         </a>
-        <p class="pb-3">
+        <p class="pb-3 eng">
+          Let's together making content pipeline tools!<br>
+          Please send us a collaborative request by email.
+        </p>
+        <p class="pb-3 kor">
           함께 콘텐츠, 콘텐츠 파이프라인, 소프트웨어를 개발해요!<br>
-          우리에게 이메일로 협업 요청을 주시면 연락드리겠습니다.
+          이메일로 협업 요청을 주시면 연락드리겠습니다.
         </p>
       </div>
     </div>
@@ -205,8 +260,11 @@
 
 <section class="container p-5 text-center">
 	<h3><a name="donation"></a>Donation</h3>
-	<div class="text-secondary">
-      “Thank you for supporting us.”
+	<div class="text-secondary eng">
+    “Thank you for supporting us.”
+  </div>
+  <div class="text-secondary kor">
+    “당신의 지원에 감사합니다.”
 	</div>
 	<div class="pt-3">
     <p class="p-2">
@@ -230,8 +288,6 @@
     <h5>Social</h5>
     <ul class="list-unstyled text-small">
       <li><a class="text-muted" href="https://www.youtube.com/channel/UCHsxW9hros1VlKKd4HAvG8A">Youtube</a></li>
-      <li><a class="text-muted" href="https://brunch.co.kr/@lazypic">Brunch</a></li>
-      <li><a class="text-muted" href="https://www.facebook.com/groups/1507793305992700/">Facebook</a></li>
       <li><a class="text-muted" href="https://www.instagram.com/lazypic_insta">Instagram</a></li>
     </ul>
     </div>
@@ -271,12 +327,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <script src="js/creative.min.js"></script>
-<script>
-  Holder.addTheme('thumb', {
-    bg: '#55595c',
-    fg: '#eceeef',
-    text: 'Thumbnail'
-  });
-</script>
+<script src="js/homepage.js"></script>
+
 </body>
 </html>
