@@ -39,6 +39,6 @@ function cacher(txt,nb){
     }
 }
 function init(){
-    langue(english, korean);
+    langue(korean, english);
 }
 init();
