@@ -229,3 +229,14 @@ img::-moz-selection {
 .text-emeraldgreen:hover {
   color: #00b3b0;
 }
+
+.companyinfo {
+  font-size: 12px;
+  line-height: -10px;
+  color: #666;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #666;
+}
