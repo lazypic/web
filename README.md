@@ -5,11 +5,7 @@
 
 #### 배포
 배포를 위해서 AWS CLI 설치가 필요합니다.
-
-```bash
-$ pip install awscli
-$ ./publish
-```
+- https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 
 또한 admin@lazypic.org 를 통해서 AWS 배포 S3 Write 키를 발급받아야 합니다.
 
