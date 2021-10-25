@@ -261,7 +261,6 @@ img::-moz-selection {
 .container {
   position: relative;
   text-align: center;
-  color: white;
 }
 
 /* Bottom left text */
