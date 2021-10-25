@@ -104,6 +104,9 @@ img::-moz-selection {
 .thumbnail {
   width: 600px;
 }
+.armark {
+  width: 40px;
+}
 
 @media (min-width: 768px) {
   .banner {
@@ -111,6 +114,9 @@ img::-moz-selection {
   }
   .thumbnail {
     width: 600px;
+  }
+  .armark {
+    width: 40px;
   }
 }
 
@@ -120,6 +126,9 @@ img::-moz-selection {
   }
   .thumbnail {
     width: 600px;
+  }
+  .armark {
+    width: 40px;
   }
   #mainNav {
     border-color: transparent;
@@ -170,6 +179,9 @@ img::-moz-selection {
   }
   .thumbnail {
     width: 600px;
+  }
+  .armark {
+    width: 40px;
   }
 }
 
@@ -244,15 +256,6 @@ img::-moz-selection {
   color: #666;
 }
 
-#container-ar {
-  position:relative;
-}
-
-#armark {
-  position: absolute;
-  left: 50px;
-  top: 50px;
-}
 
 /* Container holding the image and the text */
 .container {
