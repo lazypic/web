@@ -298,3 +298,7 @@ img::-moz-selection {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#intro {
+  height: 100vh
+}
