@@ -241,8 +241,8 @@ img::-moz-selection {
 }
 
 .text-emeraldgreen, .text-emeraldgreen:hover, .text-emeraldgreen:visited {
-  color: #00b3b0;
-  text-decoration: none;
+  color: #505453;
+  text-decoration: underline;
 }
 
 .companyinfo {
