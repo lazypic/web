@@ -245,6 +245,10 @@ img::-moz-selection {
   text-decoration: underline;
 }
 
+.text-grey {
+  color: #929897;
+}
+
 .companyinfo {
   font-size: 12px;
   line-height: -10px;
