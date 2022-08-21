@@ -307,3 +307,6 @@ img::-moz-selection {
   height: 100vh
 }
 
+.title {
+  letter-spacing:2px
+}
