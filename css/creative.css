@@ -312,3 +312,7 @@ img::-moz-selection {
   font-family: 'Bellefair';
   
 }
+
+.text {
+  font-family: 'Nanum Myeongjo', serif;
+}
