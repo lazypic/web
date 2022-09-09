@@ -327,3 +327,7 @@ img::-moz-selection {
 .activedomain {
   font-family: 'Lato', sans-serif;
 }
+
+.progress {
+  height: 4px;
+}
