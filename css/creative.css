@@ -308,9 +308,12 @@ img::-moz-selection {
 }
 
 .title {
-  
   font-family: 'Bellefair';
-  
+}
+
+.subtitle {
+  font-family: 'Bellefair';
+  font-size: 28px;
 }
 
 .text {
@@ -319,4 +322,8 @@ img::-moz-selection {
 
 .slogan {
   font-family: 'Abel', sans-serif;
+}
+
+.activedomain {
+  font-family: 'Lato', sans-serif;
 }
