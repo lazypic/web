@@ -307,6 +307,10 @@ img::-moz-selection {
   height: 100vh
 }
 
+#whatwedo {
+  height: 100vh
+}
+
 .title {
   font-family: 'Bellefair';
 }
