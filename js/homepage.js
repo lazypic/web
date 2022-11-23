@@ -42,3 +42,32 @@ function init(){
     langue(korean, english);
 }
 init();
+
+
+function sendBusinessAlliance() {
+    let obj = new Object
+    obj.name = document.getElementById("name").value
+    obj.subject = document.getElementById("subject").value
+    obj.body = document.getElementById("body").value
+    obj.email = document.getElementById("email").value
+    console.log(obj)
+    fetch("https://v9lsocdqh0.execute-api.ap-northeast-2.amazonaws.com/default/business-alliance", {
+      method: 'POST',
+      body: JSON.stringify(obj),
+    })
+    .then((response) => {
+        if (!response.ok) {
+            response.text().then(function (text) {
+                return
+            });
+        }
+        return response.json()
+    })
+    .then((obj) => {
+      alert("Information has been sent.");
+      console.log(obj)
+    })
+    .catch((err) => {
+        console.log(err)
+    });
+}
