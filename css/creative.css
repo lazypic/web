@@ -355,18 +355,18 @@ img::-moz-selection {
 
 .module-image {
   height: 4em;
-  transform: translateY(-15px);
+  transform: translateY(-1em);
   border-radius: 20%;
 }
 
 .module-image-no-border {
   height: 4em;
-  transform: translateY(-15px);
+  transform: translateY(-1em);
 }
 
 .module-image-aswf {
   height: 3em;
-  transform: translateY(-15px);
+  transform: translateY(-1em);
 }
 
 
