@@ -335,3 +335,53 @@ img::-moz-selection {
 .progress {
   height: 4px;
 }
+
+.about-icon {
+  font-size: 3em;
+}
+
+.module-icon {
+  font-size: 4em;
+}
+
+.module-sm-icon-red {
+  font-size: 3em;
+  color: #FF0000;
+}
+
+.module-sm-icon {
+  font-size: 3em;
+}
+
+.module-image {
+  height: 4em;
+  transform: translateY(-15px);
+  border-radius: 20%;
+}
+
+.module-image-no-border {
+  height: 4em;
+  transform: translateY(-15px);
+}
+
+.module-image-aswf {
+  height: 3em;
+  transform: translateY(-15px);
+}
+
+
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+}
+
+.nologo-companytitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2.5em;
+}
+
+.logo-black {
+  /*filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(5deg) brightness(10%) contrast(0.1%);*/
+  filter: invert(1)
+	/*https://codepen.io/sosuke/pen/Pjoqqp*/
+}
