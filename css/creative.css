@@ -369,6 +369,10 @@ img::-moz-selection {
   transform: translateY(-1em);
 }
 
+.bm-model {
+  width: 23em;
+}
+
 
 .about-title {
   font-family: 'Raleway', sans-serif;
