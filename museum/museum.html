@@ -1,0 +1,28 @@
+<style>canvas { border: 1px solid black; }</style>
+<canvas id="mycanvas"/>
+
+<script type="text/javascript">
+var canvas = document.getElementById('mycanvas');
+canvas.width = 200;
+canvas.height = 250;
+var context = canvas.getContext('2d');
+
+// 새로운 이미지 객체를 만듬
+var img01 = new Image();
+var img02 = new Image();
+img01.onload = function(){
+  //context.drawImage(img01, 0, 0, 1200, 1815, 0, 0, canvas.width, canvas.height);
+  // 290: 원본 이미지에서 잘라낼 영역의 시작 x 좌표를 나타냅니다.
+  // 20: 원본 이미지에서 잘라낼 영역의 시작 y 좌표를 나타냅니다.
+  // 129: 원본 이미지에서 잘라낼 영역의 너비를 나타냅니다.
+  // 340: 원본 이미지에서 잘라낼 영역의 높이를 나타냅니다.
+  // 20: 캔버스에 그릴 영역의 시작 x 좌표를 나타냅니다.
+  // 20: 캔버스에 그릴 영역의 시작 y 좌표를 나타냅니다.
+  // 180: 캔버스에 그릴 영역의 너비를 나타냅니다.
+  // 150: 캔버스에 그릴 영역의 높이를 나타냅니다.
+  context.drawImage(img02, 0, 0, 600, 711, 0, 0, canvas.width, canvas.height);
+}
+// 이미지 URL
+img01.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mona_Lisa-restored.jpg/1200px-Mona_Lisa-restored.jpg';
+img02.src = './images/photo-frame-png-24597.png';
+</script>
