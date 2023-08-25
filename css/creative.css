@@ -392,12 +392,6 @@ img::-moz-selection {
 	/*https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 
-.logo-rd101-color {
-  /*filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(5deg) brightness(10%) contrast(0.1%);*/
-  filter: invert(1) sepia(90%) saturate(2732%) hue-rotate(194deg) brightness(96%) contrast(105%);
-	/*https://codepen.io/sosuke/pen/Pjoqqp*/
-}
-
 @media screen and (max-width: 736px) {
   .bm-model {
     height: 13em;
