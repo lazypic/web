@@ -403,3 +403,7 @@ img::-moz-selection {
     border-radius: 20%;
   }
 }
+
+.text-red {
+  color: #cc0000;
+}
